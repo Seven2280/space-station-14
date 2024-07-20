@@ -23,7 +23,7 @@ public sealed partial class PryingComponent : Component
     /// Lower values result in more time.
     /// </summary>
     [DataField]
-    public float SpeedModifier = 1.0f;
+    public float SpeedModifier = 1.5f;
 
     /// <summary>
     /// What sound to play when prying is finished.
@@ -85,8 +85,8 @@ public readonly record struct PriedEvent(EntityUid User)
 public record struct GetPryTimeModifierEvent
 {
     public readonly EntityUid User;
-    public float PryTimeModifier = 1.0f;
-    public float BaseTime = 5.0f;
+    public float PryTimeModifier = 	1.0f;
+    public float BaseTime = 1.0f;
 
     public GetPryTimeModifierEvent(EntityUid user)
     {

@@ -265,7 +265,7 @@ public sealed partial class DoorComponent : Component
     /// Default time that the door should take to pry open.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float PryTime = 1.5f;
+    public float PryTime = 0.5f;
 
     [DataField]
     public bool ChangeAirtight = true;

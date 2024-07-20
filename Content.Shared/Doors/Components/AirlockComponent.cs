@@ -30,7 +30,7 @@ public sealed partial class AirlockComponent : Component
     /// so this default is closer to 6 effectively on e.g. jaws (9 seconds when applied to other default.)
     /// </summary>
     [DataField]
-    public float PoweredPryModifier = 9f;
+    public float PoweredPryModifier = 4f;
 
     /// <summary>
     /// Whether the maintenance panel should be visible even if the airlock is opened.

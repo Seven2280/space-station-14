@@ -1,0 +1,100 @@
+- type: entity
+  id: TalosWindow
+  parent: Window
+  name: window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: Talos/Structures/Walls/window.rsi
+  - type: Icon
+    sprite: Talos/Structures/Walls/window.rsi
+    state: full
+  - type: IconSmooth
+    key: walls
+    base: gold
+
+- type: entity
+  id: TalosWindowSill
+  parent: Window
+  name: window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Talos/Structures/Walls/still.rsi
+  - type: Icon
+    sprite: Talos/Structures/Walls/still.rsi
+    state: full
+  - type: IconSmooth
+    key: walls
+    base: gold
+
+##COLORED
+- type: entity
+  id: TalosWindowGorlex
+  parent: TalosWindow
+  name: window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    color: "#855363"
+  - type: Icon
+    color: "#855363"
+
+- type: entity
+  id: TalosWindowInterdyne
+  parent: TalosWindow
+  name: window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    color: "#336f92"
+  - type: Icon
+    color: "#336f92"
+
+- type: entity
+  id: TalosWindowCybersun
+  parent: TalosWindow
+  name: window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    color: "#c2c1c9"
+  - type: Icon
+    color: "#c2c1c9"
+
+- type: entity
+  id: TalosWindowWaffleCo
+  parent: TalosWindow
+  name: window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    color: "#7f7868"
+  - type: Icon
+    color: "#7f7868"
