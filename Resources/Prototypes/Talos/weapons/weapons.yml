@@ -1,0 +1,271 @@
+# - type: entity
+#   name: C-20r sub machine gun
+#   parent: BaseWeaponSubMachineGun 
+#   id: WeaponSubMachineGunC12rTGMC
+#   description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+#   components:
+#   - type: Sprite
+#     sprite: Imperial/TGMC/Weapon/c12r.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-0
+#       map: ["enum.GunVisualLayers.Mag"]
+  # - type: Gun
+  #   fireRate: 7
+  #   minAngle: 2
+  #   maxAngle: 10
+  #   angleIncrease: 3
+  #   angleDecay: 16
+  #   projectileSpeed: 28
+#     soundGunshot:
+#       path: /Audio/Imperial/TGMC/Gunshots/gun_p14.ogg
+#   - type: ChamberMagazineAmmoProvider
+#     autoEject: true
+#   - type: MagazineVisuals
+#     magState: mag
+#     steps: 1
+#     zeroVisible: true
+#   - type: Appearance
+  # - type: ItemSlots
+  #   slots:
+  #     gun_magazine:
+  #       name: Magazine
+  #       startingItem: BaseMagazinePistolSubMachineGunC12RTGMC
+  #       insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+  #       ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+  #       priority: 2
+  #       whitelist:
+  #         tags:
+  #           - BaseMagazinePistolSubMachineGunC12RTGMC
+
+- type: entity
+  name: C-20r sub machine gun
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunCr42
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/syndie/cr42.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 6
+    minAngle: 2
+    maxAngle: 8
+    angleIncrease: 2
+    angleDecay: 16
+    projectileSpeed: 26
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazinePistolSubMachineGunCr42
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazinePistolSubMachineGunCr42
+  - type: Item
+    sprite: Talos/Weapons/syndie/cr42inhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  name: C-20r sub machine gun
+  parent: BaseWeaponSubMachineGun #ветвясь от шотгана прототип разрывается
+  id: WeaponShotgunCentaur
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/syndie/centaur.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 2
+    minAngle: 2
+    maxAngle: 8
+    angleIncrease: 2
+    angleDecay: 16
+    projectileSpeed: 28
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineShotgunCentaur
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineShotgunCentaur
+  - type: Item
+    sprite: Talos/Weapons/syndie/centaurinhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 7500
+
+- type: entity
+  name: Haarabad Rifle
+  parent: BaseWeaponRifle
+  id: WeaponRifleJahve
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/syndie/jahve.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 6
+    minAngle: 2
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 16
+    projectileSpeed: 24
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineRifleJahve
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineRifleJahve
+  - type: Item
+    sprite: Talos/Weapons/syndie/jahveinhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 6500
+
+- type: entity
+  name: L6 SAW
+  id: WeaponHeavyAssaultL6
+  parent: BaseWeaponLightMachineGun
+  description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/syndie/l6assault.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: Gun
+    fireRate: 7
+    minAngle: 3
+    maxAngle: 9
+    angleIncrease: 2
+    angleDecay: 16
+    projectileSpeed: 20
+  - type: Item
+    sprite: Talos/Weapons/syndie/l6inhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 15000
+
+- type: entity
+  name: china lake
+  parent: BaseWeaponLauncher
+  id: WeaponLauncherSisyphus
+  description: PLOOP
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/syndie/sisyphus.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: Talos/Weapons/syndie/sisyphusinhands.rsi
+    size: Normal
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 10
+    proto: GrenadeFrag
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Haarabad Rifle
+  parent: BaseWeaponRifle
+  id: WeaponRifleRavager
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/syndie/ravager.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 4
+    minAngle: 2
+    maxAngle: 2
+    angleIncrease: 1
+    angleDecay: 16
+    projectileSpeed: 75
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineRifleRavager
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineRifleRavager
+  - type: Item
+    sprite: Talos/Weapons/syndie/ravagerinhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 6500
+    

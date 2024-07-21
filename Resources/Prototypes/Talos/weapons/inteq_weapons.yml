@@ -1,0 +1,223 @@
+- type: entity
+  id: BaseMagazinePistolSubMachineGunP90
+  name: SMG magazine (.35 auto)
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - BaseMagazinePistolSubMachineGunP90
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgePistol
+    capacity: 50
+  - type: Item
+    size: Tiny
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: BaseMagazineRifleAKSU  # Yeah it's weird but it's pistol caliber
+  name: Rifle magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - BaseMagazineRifleAKSU
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 30
+  - type: Item
+    size: Tiny
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+
+- type: entity
+  id: BaseMagazineRifleSCAR  # Yeah it's weird but it's pistol caliber
+  name: Rifle magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - BaseMagazineRifleSCAR
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 40
+  - type: Item
+    size: Tiny
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+
+- type: Tag
+  id: BaseMagazineRifleSCAR
+- type: Tag
+  id: BaseMagazineRifleAKSU
+- type: Tag
+  id: BaseMagazinePistolSubMachineGunP90
+
+- type: entity
+  name: C-20r sub machine gun
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunP90
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/p90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 10
+    minAngle: 5
+    maxAngle: 30
+    angleIncrease: 4
+    angleDecay: 16
+    projectileSpeed: 30
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazinePistolSubMachineGunP90
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazinePistolSubMachineGunP90
+  - type: Item
+    sprite: Talos/Weapons/p90inhand.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  name: Haarabad Rifle
+  parent: BaseWeaponRifle
+  id: WeaponRifleSCAR
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/scar-H.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 6.5
+    minAngle: 2
+    maxAngle: 15
+    angleIncrease: 1
+    angleDecay: 16
+    projectileSpeed: 28
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineRifleSCAR
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineRifleSCAR
+  - type: Item
+    sprite: Talos/Weapons/scar-H-inhand.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 6500
+
+- type: entity
+  name: Haarabad Rifle
+  parent: BaseWeaponRifle
+  id: WeaponRifleAKSU
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Talos/Weapons/aksu.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 7.5
+    minAngle: 2
+    maxAngle: 10
+    angleIncrease: 1
+    angleDecay: 16
+    projectileSpeed: 22
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineRifleAKSU
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineRifleAKSU
+  - type: Item
+    sprite: Talos/Weapons/aksuinhand.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 6500
