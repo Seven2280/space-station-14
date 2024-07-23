@@ -368,3 +368,7 @@ IntercomAssesmbly: IntercomAssembly
 
 #2024-07-13 Corvax
 HyperLinkBookCorporateLaw: BookSpaceLaw
+
+#2024-07-23 SentryPRimis
+WallLight: PoweredlightLED
+#AlwaysPoweredWallLight: AlwaysPoweredlightLED
