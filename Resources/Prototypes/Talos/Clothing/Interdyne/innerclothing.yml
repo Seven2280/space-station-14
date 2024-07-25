@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInterdyne
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Interdyne/worker.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Interdyne/worker.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInterdyneCMO
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Interdyne/officer.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Interdyne/officer.rsi

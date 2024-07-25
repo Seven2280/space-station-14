@@ -1,0 +1,52 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSyndieBase
+  name: filler
+  nospawn: true
+  abstract: true
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Cold: 0.9
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitGorlexIntern
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Gorlex/intern.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Gorlex/intern.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitGorlexOfficer
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Gorlex/officer.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Gorlex/officer.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitGorlexMasteratarms
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Gorlex/master-at-arms.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Gorlex/master-at-arms.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitGorlexSecurityConsultant
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Gorlex/securityconsultant.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Gorlex/securityconsultant.rsi

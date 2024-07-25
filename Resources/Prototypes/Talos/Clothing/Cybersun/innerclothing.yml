@@ -1,0 +1,29 @@
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitCybersun
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Cybersun/worker.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Cybersun/worker.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitCybersunOfficer
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Cybersun/officer.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Cybersun/officer.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitCybersunCommandOfficer
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Cybersun/commandofficer.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Cybersun/commandofficer.rsi

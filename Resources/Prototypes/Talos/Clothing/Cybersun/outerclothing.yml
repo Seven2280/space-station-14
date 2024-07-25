@@ -1,0 +1,100 @@
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterCybersun
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Cybersun/cmd.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Cybersun/cmd.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.8
+        Heat: 0.7
+        Caustic: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterCybersunJacket
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Cybersun/jacket.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Cybersun/jacket.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Heat: 0.8
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterCybersunCoat
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Cybersun/coat.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Cybersun/coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Heat: 0.8
+        Cold: 0.8
+        Caustic: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterCybersunColdCoat
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Cybersun/cold_coat.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Cybersun/cold_coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Heat: 0.5
+        Cold: 0.5
+        Caustic: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterCybersunVest
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Cybersun/vest.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Cybersun/vest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.7
+        Heat: 0.9
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
