@@ -64,8 +64,8 @@
     containers:
       board: !type:Container
   - type: Weldable
-    fuel: 5
-    time: 3
+    fuel: 1
+    time: 1.5
   - type: Airlock
     openUnlitVisible: true # Corvax-Resprite-Airlocks
   - type: NavMapDoor
@@ -77,7 +77,7 @@
   - type: ExtensionCableReceiver
   - type: Electrified
     enabled: false
-    usesApcPower: true
+    usesApcPower: false #syndtest
   - type: WiresPanel
   - type: WiresPanelSecurity
   - type: Wires
@@ -148,6 +148,11 @@
     price: 150
   - type: LightningTarget
     priority: 1
+  - type: LitOnPowered
+  - type: PointLight
+    radius: 3
+    energy: 1
+    color: "#42bfe8"
   - type: Tag
     tags:
       - Airlock
