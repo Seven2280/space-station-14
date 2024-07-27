@@ -1,0 +1,101 @@
+- type: entity
+  name: energy-crossbow
+  parent: BaseWeaponBatterySmall
+  id: energy-crossbow
+  description: A weapon favored by syndicate specialists who prefer to work covertly.
+  components:
+  - type: Tag
+    tags:
+    - Taser
+    - Sidearm
+  - type: Sprite
+    sprite: Talos/minicrossbow.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: shaded
+  - type: Item
+    sprite: Talos/minicrossbow.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Talos/laser.ogg
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 3
+    rechargeSound:
+      path: /Audio/Weapons/drawbow2.ogg
+  - type: UseDelay
+  - type: BasicEntityAmmoProvider
+    proto: BulletCrossbow
+    capacity: 1
+    count: 1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: enegry crossbow bolt
+  id: BulletCrossbow
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    noRot: false
+    sprite: Talos/minicrossbow.rsi
+    color: "#FFFFFF"
+    layers:
+    - state: cbbolt
+      shader: unshaded
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        mask:
+          - Opaque
+  - type: Ammo
+  - type: StaminaDamageOnCollide
+    damage: 45
+  - type: Projectile
+    impactEffect: BulletImpactEffectGreenDisabler
+    damage:
+      types:
+        Poison: 10
+    forceSound: true
+  - type: StunOnCollideFloat
+    stunAmount: 0.5
+    knockdownAmount: 0.5
+
+- type: entity
+  id: BulletImpactEffectGreenDisabler
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 0.2
+  - type: Sprite
+    drawdepth: Effects
+    layers:
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      state: impact_laser_greyscale
+      color: green
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+    - HideContextMenu
