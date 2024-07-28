@@ -14,7 +14,7 @@ ent-WeaponHeavyAssaultL6 = Штурмовой Пулемёт L6
     .desc = Современный пулемёт с удобной рукоятью из дорогих металлов. Использует патроны .30 винтовочный.
     .suffix = { "" }
 
-ent-WeaponLauncherSisyphus = Сизиф
+ent-WeaponLauncherSisyphus = RPG Сизиф
     .desc = БЛУП!
     .suffix = { "" }
 
