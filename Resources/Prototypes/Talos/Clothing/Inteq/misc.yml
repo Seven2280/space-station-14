@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingBeltMilitaryWebbing
+  id: ClothingUniformWebbingInteq
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Belt/inteq.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Belt/inteq.rsi
+
+- type: entity
+  parent: ClothingBeltMilitaryWebbing
+  id: ClothingUniformWebbingInteqMed
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Belt/inteqmed.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Belt/inteqmed.rsi

@@ -165,7 +165,7 @@
           types:
             Poison: 1
       - !type:FlammableReaction
-        multiplier: 0.4
+        multiplier: 0.8
 
 - type: reagent
   id: Fluorosurfactant
