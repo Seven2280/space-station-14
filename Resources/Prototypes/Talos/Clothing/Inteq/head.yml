@@ -1,0 +1,82 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadInteqCap
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Head/Inteq/inteqsoft.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Head/Inteq/inteqsoft.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    #- HidesHair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadInteqMedCap
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Head/Inteq/inteqmedsoft.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Head/Inteq/inteqmedsoft.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    #- HidesHair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadInteqSwat
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Head/Inteq/inteq_swat.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Head/Inteq/inteq_swat.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.9
+        Piercing: 0.85
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadInteqPeak
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Head/Inteq/inteqpeak.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Head/Inteq/inteqpeak.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    #- HidesHair

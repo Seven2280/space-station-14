@@ -1,0 +1,65 @@
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInteq
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Inteq/inteq.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Inteq/inteq.rsi
+
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInteqSkirt
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Inteq/inteqskirt.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Inteq/inteqskirt.rsi
+
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInteqEng
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Inteq/inteqeng.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Inteq/inteqeng.rsi
+
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInteqEngSkirt
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Inteq/inteqengskirt.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Inteq/inteqengskirt.rsi
+
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInteqMed
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Inteq/med.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Inteq/med.rsi
+
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitInteqMedSkirt
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Inteq/medskirt.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Inteq/medskirt.rsi

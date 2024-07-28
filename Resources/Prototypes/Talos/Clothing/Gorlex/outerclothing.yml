@@ -18,6 +18,9 @@
         Caustic: 0.55
   - type: ExplosionResistance
     damageCoefficient: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -37,6 +40,9 @@
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -58,6 +64,9 @@
         Caustic: 0.7
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterGorlexVest

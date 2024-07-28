@@ -280,7 +280,7 @@
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 10
+        doAfter: 3
 
 ## High security level door: a layer of plasteel plating protects the internal wiring
   - node: highSecurityUnfinished
@@ -346,7 +346,7 @@
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 15
+        doAfter: 5
 
     - to: maxSecurity
       conditions:
@@ -419,5 +419,5 @@
       - !type:WirePanel {}
       steps:
       - tool: Welding
-        doAfter: 15
+        doAfter: 5
 

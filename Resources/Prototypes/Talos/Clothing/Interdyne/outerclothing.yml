@@ -16,6 +16,9 @@
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -35,6 +38,9 @@
         Caustic: 0.2
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -54,6 +60,9 @@
         Caustic: 0.1
   - type: ExplosionResistance
     damageCoefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -73,6 +82,9 @@
         Caustic: 0.2
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -94,3 +106,6 @@
         Caustic: 0.4
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1

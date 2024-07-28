@@ -10,17 +10,17 @@ namespace Content.Client.Stylesheets
 {
     public sealed class StyleSpace : StyleBase
     {
-        public static readonly Color SpaceRed = Color.FromHex("#9b2236");
+        public static readonly Color SpaceRed = Color.FromHex("#f6633e");
 
-        public static readonly Color ButtonColorDefault = Color.FromHex("#464966");
-        public static readonly Color ButtonColorHovered = Color.FromHex("#575b7f");
-        public static readonly Color ButtonColorPressed = Color.FromHex("#3e6c45");
-        public static readonly Color ButtonColorDisabled = Color.FromHex("#30313c");
+        public static readonly Color ButtonColorDefault = Color.FromHex("#7d7d82");
+        public static readonly Color ButtonColorHovered = Color.FromHex("#b01232");
+        public static readonly Color ButtonColorPressed = Color.FromHex("#f6633e");
+        public static readonly Color ButtonColorDisabled = Color.FromHex("#610633");
 
-        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#ab3232");
-        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#cf2f2f");
-        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#3e6c45");
-        public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#602a2a");
+        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#7d7d82");
+        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#b01232");
+        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#f6633e");
+        public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#610633");
 
         public override Stylesheet Stylesheet { get; }
 
