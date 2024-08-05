@@ -1,0 +1,24 @@
+- type: job
+  id: TalosGorlex
+  name: job-name-TalosGorlex
+  description: job-description-TalosGorlex
+  playTimeTracker: JobTalosGorlex
+  startingGear: TalosGorlexGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+  access: 
+  - Maintenance
+  - Cargo
+  - Salvage
+
+- type: startingGear
+  id: TalosGorlexGear
+  equipment:
+    id: TalosGorlexIDCard
+    ears: ClothingHeadsetGrey
+    jumpsuit: ClothingUniformJumpsuitGorlexOfficer
+    shoes: ClothingShoesBootsJack
+    belt: ClothingUniformWebbingGorlex
+  #storage:
+    #back:
+    #- Stuff

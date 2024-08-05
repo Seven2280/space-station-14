@@ -1,0 +1,40 @@
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitWaffle
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Waffle/worker.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Waffle/worker.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitWaffleBarmen
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Waffle/barmen.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Waffle/barmen.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitWaffleMujik
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Waffle/mujik.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Waffle/mujik.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitWaffleProspector
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/Waffle/prospector.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/Waffle/prospector.rsi
+

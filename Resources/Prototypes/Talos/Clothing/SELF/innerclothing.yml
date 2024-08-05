@@ -1,0 +1,21 @@
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitSELF
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/SELF/officer.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/SELF/officer.rsi
+
+
+- type: entity
+  parent: ClothingUniformJumpsuitSyndieBase
+  id: ClothingUniformJumpsuitSELFWorker
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Uniforms/SELF/worker.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Uniforms/SELF/worker.rsi

@@ -1,0 +1,23 @@
+- type: job
+  id: talosassistant
+  name: job-name-talosassistant
+  description: job-description-talosassistant
+  playTimeTracker: Jobtalosassistant
+  startingGear: talosassistantGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+  access: 
+  - Maintenance
+  - Cargo
+  - Salvage
+
+- type: startingGear
+  id: talosassistantGear
+  equipment:
+    id: talosassistantIDCard
+    ears: ClothingHeadsetGrey
+    jumpsuit: ClothingUniformJumpsuitGorlexIntern
+    shoes: ClothingShoesBootsWork
+  #storage:
+    #back:
+    #- Stuff

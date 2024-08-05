@@ -296,6 +296,13 @@
     pack: MedibotAds
   - type: Inventory
     templateId: medibot
+  - type: Access
+    tags:
+    - Cargo
+    - Maintenance
+    - Salvage
+    - Medical
+
 
 - type: entity
   parent:

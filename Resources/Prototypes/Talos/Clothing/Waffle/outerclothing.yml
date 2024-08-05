@@ -1,0 +1,45 @@
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterWaffleBarmen
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Waffle/barmen.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Waffle/barmen.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Heat: 0.8
+        Caustic: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterWaffleProspector
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/OuterClothing/Waffle/prospector.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/OuterClothing/Waffle/prospector.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.6
+        Blunt: 0.8
+        Heat: 0.6
+        Cold: 0.6
+        Caustic: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1

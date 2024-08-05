@@ -1,0 +1,23 @@
+### ID CARDS
+- type: entity
+  parent: IDCardStandard
+  id: talosassistantIDCard
+  name: talosassistant ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: assistant
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosGorlexIDCard
+  name: TalosGorlex ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: assistant
+

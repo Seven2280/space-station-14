@@ -1,0 +1,58 @@
+# - type: department
+#   id: CommandOfficers
+#   description: department-Command-description
+#   color: "291621"
+#   roles:
+#    - CargoTechnician
+#    - Quartermaster
+#    - SalvageSpecialist
+
+- type: department
+  id: Gorlex
+  description: department-Gorlex-description
+  color: "#c13623"
+  roles:
+   - TalosGorlex
+
+# - type: department
+#   id: Interdyne
+#   description: department-Interdyne-description
+#   color: "8bbdc7"
+#   roles:
+#    - CargoTechnician
+#    - Quartermaster
+#    - SalvageSpecialist
+
+# - type: department
+#   id: Cybersun
+#   description: department-Cybersun-description
+#   color: "ebebeb"
+#   roles:
+#    - CargoTechnician
+#    - Quartermaster
+#    - SalvageSpecialist
+
+# - type: department
+#   id: WaffleCo
+#   description: department-WaffleCo-description
+#   color: "8d559a"
+#   roles:
+#    - CargoTechnician
+#    - Quartermaster
+#    - SalvageSpecialist
+
+# - type: department
+#   id: SELF
+#   description: department-SELF-description
+#   color: "3d598e"
+#   roles:
+#    - CargoTechnician
+#    - Quartermaster
+#    - SalvageSpecialist
+
+- type: department
+  id: Gastarbajter
+  description: department-Gastarbajter-description
+  color: "#3d598e"
+  roles:
+   - talosassistant
