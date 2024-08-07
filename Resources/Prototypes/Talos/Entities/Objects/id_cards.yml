@@ -19,5 +19,26 @@
     sprite: Talos/devices/id.rsi
     layers:
     - state: id
-    - state: assistant
+    - state: gorlex-1
 
+- type: entity
+  parent: IDCardStandard
+  id: TalosGorlexVanguardIDCard
+  name: TalosGorlex ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: gorlex-2
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosGorlexMasterAtArmsIDCard
+  name: TalosGorlex ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: cmd

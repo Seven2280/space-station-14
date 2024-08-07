@@ -1,0 +1,33 @@
+- type: job
+  id: TalosGorlexMasterAtArms
+  name: job-name-TalosGorlexMasterAtArms
+  description: job-description-TalosGorlexMasterAtArms
+  playTimeTracker: JobTalosGorlexMasterAtArms
+  startingGear: TalosGorlexMasterAtArmsGear
+  icon: "JobIconHeadOfSecurity"
+  supervisors: job-supervisors-everyone
+  access: 
+  - Maintenance
+  - Cargo
+  - Security
+  - Brig
+  - Salvage
+  - Cryogenics
+  - External
+  - Command
+  - Armory
+
+- type: startingGear
+  id: TalosGorlexMasterAtArmsGear
+  equipment:
+    id: TalosGorlexMasterAtArmsIDCard
+    ears: ClothingHeadsetAltSecurity
+    jumpsuit: ClothingUniformJumpsuitGorlexSecurityConsultant
+    shoes: ClothingShoesBootsJack
+    belt: ClothingUniformWebbingGorlex
+    outerClothing: ClothingOuterGorlex
+    head: ClothingHeadGorlexPeak
+    gloves: ClothingHandsGlovesCombat
+  #storage:
+    #back:
+    #- Stuff

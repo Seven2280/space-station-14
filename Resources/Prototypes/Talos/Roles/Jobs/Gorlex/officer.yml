@@ -4,18 +4,22 @@
   description: job-description-TalosGorlex
   playTimeTracker: JobTalosGorlex
   startingGear: TalosGorlexGear
-  icon: "JobIconPassenger"
+  icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-everyone
   access: 
   - Maintenance
   - Cargo
+  - Security
+  - Brig
   - Salvage
+  - Cryogenics
+  - External
 
 - type: startingGear
   id: TalosGorlexGear
   equipment:
     id: TalosGorlexIDCard
-    ears: ClothingHeadsetGrey
+    ears: ClothingHeadsetSecurity
     jumpsuit: ClothingUniformJumpsuitGorlexOfficer
     shoes: ClothingShoesBootsJack
     belt: ClothingUniformWebbingGorlex
