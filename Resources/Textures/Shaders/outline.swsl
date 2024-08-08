@@ -28,7 +28,7 @@
 //************************************************************************
 
 uniform highp float outline_width; // = 2.0;
-uniform highp vec4 outline_color; // =vec4(1.0,0.0,0.0,0.33);
+uniform highp vec4 outline_color; // =vec4(0.57,0.89,0.95,1);
 uniform bool outline_fullbright; // =false;
 uniform highp float light_boost; // = 4.0;
 uniform highp float light_gamma; // = 1.0;
