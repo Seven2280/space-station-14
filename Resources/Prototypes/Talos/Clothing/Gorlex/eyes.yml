@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingEyesGlassesSecurity
+  id: ClothingEyesGorlex
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Eyes/gorlex.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Eyes/gorlex.rsi

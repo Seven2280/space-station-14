@@ -1,0 +1,34 @@
+- type: job
+  id: TalosInterdyneParamedic
+  name: job-name-talosinterdyne-paramedic
+  description: job-description-talosinterdyne-paramedic
+  playTimeTracker: Jobtalosinterdyneparamedic
+  startingGear: TalosInterdyneParamedicGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+  access: 
+  - Maintenance
+  - Cargo
+  - Salvage
+  - Cryogenics
+  - External
+  - Medical
+  - Chemistry
+  - Service
+  - Brig
+
+- type: startingGear
+  id: TalosInterdyneParamedicGear
+  equipment:
+    id: TalosInterdyneParamedicIDCard
+    ears: ClothingHeadsetMedical
+    jumpsuit: ClothingUniformJumpsuitInterdyne
+    belt: ClothingBeltMedicalFilled
+    shoes: ClothingShoesBootsInterdyne
+    gloves: ClothingHandsGlovesLatex
+    outerClothing: ClothingOuterInterdyneVest
+    head: ClothingHeadInterdyneTraumaTeam
+    eyes: ClothingEyesInterdyne
+  #storage:
+    #back:
+    #- Stuff

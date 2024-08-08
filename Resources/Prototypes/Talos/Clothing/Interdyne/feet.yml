@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingShoesBootsCowboyFancy
+  id: ClothingShoesBootsInterdyneCmd
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Feet/interdynecmd.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Feet/interdynecmd.rsi
+
+- type: entity
+  parent: ClothingShoesBootsWinterSyndicate
+  id: ClothingShoesBootsInterdyne
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Feet/interdyne.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Feet/interdyne.rsi

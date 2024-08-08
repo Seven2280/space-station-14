@@ -42,3 +42,36 @@
     layers:
     - state: id
     - state: cmd
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosInterdyneIDCard
+  name: TalosGorlex ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: interdyne-1
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosInterdyneParamedicIDCard
+  name: TalosGorlex ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: interdyne-2
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosInterdyneCMDIDCard
+  name: TalosGorlex ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: cmd

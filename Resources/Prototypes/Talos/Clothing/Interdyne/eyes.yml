@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingEyesHudMedical
+  id: ClothingEyesInterdyne
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Talos/Clothing/Eyes/interdyne.rsi
+  - type: Clothing
+    sprite: Talos/Clothing/Eyes/interdyne.rsi
