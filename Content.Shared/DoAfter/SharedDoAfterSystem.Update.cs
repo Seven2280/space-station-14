@@ -222,9 +222,13 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
             if (!handsQuery.TryGetComponent(args.User, out var hands) || hands.Count == 0)
                 return true;
 
-            if (args.BreakOnHandChange && (hands.ActiveHand?.Name != doAfter.InitialHand
-                                           || hands.ActiveHandEntity != doAfter.InitialItem))
-            {
+            // If an item was in the user's hand to begin with,
+            // check if the user is no longer holding the item.
+            if (args.BreakOnDropItem && doAfter.InitialItem != null && !_hands.IsHolding((args.User, hands), doAfter.InitialItem))
+                    return true;
+
+            // If the user changes which hand is active at all, interrupt the do-after
+            if (args.BreakOnHandChange && hands.ActiveHand?.Name != doAfter.InitialHand)
                 return true;
             }
         }
