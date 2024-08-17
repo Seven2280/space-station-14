@@ -87,6 +87,15 @@
   - type: GuideHelp
     guides:
     - Security
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/stun_baton_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/stun_baton_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/stun_baton_pick_up.ogg
 
 - type: entity
   name: truncheon

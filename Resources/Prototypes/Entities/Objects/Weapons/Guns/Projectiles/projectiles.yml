@@ -16,6 +16,11 @@
     tags:
       - HideContextMenu
   - type: AnimationPlayer
+  - type: PointLight
+    enabled: true
+    color: "#f3f3f3"
+    radius: 2
+    energy: 0.5
 
 # One bullet to bring them all into the darkness and bind them
 - type: entity

@@ -117,7 +117,7 @@
     angleDecay: 16
     projectileSpeed: 30
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      path: /Audio/Talos/TGMC/Gunshots/gun_p14.ogg
   - type: ChamberMagazineAmmoProvider
     autoEject: true
   - type: Appearance
@@ -158,6 +158,8 @@
     angleIncrease: 1
     angleDecay: 16
     projectileSpeed: 28
+    soundGunshot:
+      path: /Audio/Talos/TGMC/Gunshots/gun_ar18.ogg
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -200,6 +202,8 @@
     angleIncrease: 1
     angleDecay: 16
     projectileSpeed: 22
+    soundGunshot:
+      path: /Audio/Talos/TGMC/Gunshots/gun_p23.ogg
   - type: MagazineVisuals
     magState: mag
     steps: 1

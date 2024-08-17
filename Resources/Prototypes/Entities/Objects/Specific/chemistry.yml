@@ -92,6 +92,15 @@
         Blunt: 5
   - type: StaticPrice
     price: 30
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/beaker_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/beaker_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/beaker_pick_up.ogg
 
 - type: entity
   parent: BaseItem
@@ -522,4 +531,15 @@
     areaInsertRadius: 1
     storageInsertSound: /Audio/Effects/pill_insert.ogg
     storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    storageOpenSound: /Audio/Talos/Items/Open/pill_bottle_open.ogg
+    storageCloseSound: /Audio/Talos/Items/Open/pill_bottle_open.ogg
   - type: Dumpable
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/pill_bottle_place.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/pill_bottle_place.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/pill_bottle_pickup.ogg

@@ -17,6 +17,15 @@
       Cloth: 50
   - type: StaticPrice
     price: 20
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/toolbelt_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/toolbelt_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/toolbelt_pickup.ogg
 
 - type: entity
   abstract: true

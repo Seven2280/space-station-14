@@ -104,6 +104,12 @@
     price: 40
   - type: IgnitionSource
     temperature: 700
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/weldingtool_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/weldingtool_pickup.ogg
 
 - type: entity
   name: industrial welding tool

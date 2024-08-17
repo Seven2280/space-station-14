@@ -11,6 +11,10 @@
     maxItemSize: Small
     grid:
     - 0,0,3,1
+    storageOpenSound: /Audio/Talos/Items/Open/medkit_open.ogg
+    storageCloseSound: /Audio/Talos/Items/Open/medkit_open.ogg
+    storageInsertSound: /Audio/Talos/Items/Rustle/medkit_rustle.ogg
+    storageRemoveSound: /Audio/Talos/Items/Rustle/medkit_rustle.ogg
   - type: Item
     size: Large
     sprite: Objects/Specific/Medical/firstaidkits.rsi
@@ -21,6 +25,13 @@
   - type: Tag
     tags:
     - Medkit
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/medkit_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/medkit_pick_up.ogg
+
 
 - type: entity
   name: burn treatment kit

@@ -11,7 +11,11 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,2,2
+    - 0,0,2,2 ##Talos edit
+    storageOpenSound: /Audio/Talos/Items/Open/cardboard_box_open.ogg
+    storageCloseSound: /Audio/Talos/Items/Open/cardboard_box_open.ogg
+    storageInsertSound: /Audio/Talos/Items/Rustle/cardboard_box_rustle.ogg
+    storageRemoveSound: /Audio/Talos/Items/Rustle/cardboard_box_rustle.ogg
   - type: Sprite
     state: box
   - type: Tag

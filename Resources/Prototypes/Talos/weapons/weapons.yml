@@ -1,11 +1,11 @@
 # - type: entity
 #   name: C-20r sub machine gun
-#   parent: BaseWeaponSubMachineGun 
+#   parent: BaseWeaponSubMachineGun
 #   id: WeaponSubMachineGunC12rTGMC
 #   description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
 #   components:
 #   - type: Sprite
-#     sprite: Imperial/TGMC/Weapon/c12r.rsi
+#     sprite: Talos/TGMC/Weapon/c12r.rsi
 #     layers:
 #     - state: base
 #       map: ["enum.GunVisualLayers.Base"]
@@ -19,7 +19,7 @@
   #   angleDecay: 16
   #   projectileSpeed: 28
 #     soundGunshot:
-#       path: /Audio/Imperial/TGMC/Gunshots/gun_p14.ogg
+#       path: /Audio/Talos/TGMC/Gunshots/gun_p14.ogg
 #   - type: ChamberMagazineAmmoProvider
 #     autoEject: true
 #   - type: MagazineVisuals
@@ -60,7 +60,7 @@
     angleDecay: 16
     projectileSpeed: 26
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      path: /Audio/Talos/TGMC/Gunshots/gun_p14.ogg
   - type: ChamberMagazineAmmoProvider
     autoEject: true
   - type: Appearance
@@ -102,7 +102,7 @@
     angleDecay: 16
     projectileSpeed: 28
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      path: /Audio/Talos/TGMC/Gunshots/gun_sh39.ogg
   - type: ChamberMagazineAmmoProvider
     autoEject: true
   - type: Appearance
@@ -143,6 +143,8 @@
     angleIncrease: 1
     angleDecay: 16
     projectileSpeed: 24
+    soundGunshot:
+      path: /Audio/Talos/TGMC/Gunshots/gun_ar21.ogg
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -190,6 +192,8 @@
     angleIncrease: 2
     angleDecay: 16
     projectileSpeed: 20
+    soundGunshot:
+      path: /Audio/Talos/TGMC/Gunshots/gun_mg60.ogg
   - type: Item
     sprite: Talos/Weapons/syndie/l6inhands.rsi
     size: Normal
@@ -247,6 +251,8 @@
     angleIncrease: 1
     angleDecay: 16
     projectileSpeed: 75
+    soundGunshot:
+      path: /Audio/Talos/TGMC/Gunshots/gun_sr127.ogg
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -268,4 +274,3 @@
     size: Normal
   - type: StaticPrice
     price: 6500
-    

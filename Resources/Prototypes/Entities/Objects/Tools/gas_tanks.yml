@@ -45,6 +45,15 @@
       Steel: 185
   - type: StaticPrice
     price: 20
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/gas_tank_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/gas_tank_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/gas_tank_pick_up.ogg
 
 - type: entity
   abstract: true

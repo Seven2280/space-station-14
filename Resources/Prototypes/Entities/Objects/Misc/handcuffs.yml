@@ -28,6 +28,15 @@
     - Security
   - type: UseDelay
     delay: 3
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/handcuffs_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/handcuffs_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/handcuffs_pick_up.ogg
 
 - type: entity
   name: makeshift handcuffs
