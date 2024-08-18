@@ -30,6 +30,15 @@
     solutions:
       steel:
         canReact: false
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/metal_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/metal_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/metal_pick_up.ogg
 
 - type: entity
   parent: SheetMetalBase

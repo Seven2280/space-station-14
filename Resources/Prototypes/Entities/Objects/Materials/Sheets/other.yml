@@ -110,6 +110,15 @@
   - type: Tag
     tags:
     - Sheet
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/plasma_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/plasma_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/plasma_pick_up.ogg
 
 - type: entity
   parent: SheetPlasma
@@ -162,6 +171,15 @@
         - ReagentId: Phosphorus
           Quantity: 5
         canReact: false
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/plastic_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/plastic_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/plastic_pick_up.ogg
 
 - type: entity
   parent: SheetPlastic

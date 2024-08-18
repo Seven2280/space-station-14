@@ -71,12 +71,19 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 1
-# Corvax-Printer-Start
   - type: Material
   - type: PhysicalComposition
     materialComposition:
       SheetPrinter: 100
-# Corvax-Printer-End
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/paper_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/paper_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/paper_pick_up.ogg
 
 - type: entity
   name: paper scrap
