@@ -1,0 +1,44 @@
+uniform sampler2D flame1_texture;
+uniform sampler2D flame2_texture;
+uniform sampler2D flame3_texture;
+uniform sampler2D color_gradient;
+
+vec4 blend_screen(vec4 base, vec4 blend) {
+    return vec4(1.0) - (vec4(1.0) - base) * (vec4(1.0) - blend);
+}
+
+void fragment() {
+    // Scrolling vectors for 3 flame textures
+    highp vec2 f1_uv = vec2(UV.x - TIME * 0.3, UV.y + TIME * 0.1);
+    highp vec2 f2_uv = vec2(UV.x + TIME * 0.3, UV.y + TIME * 0.1);
+    highp vec2 f3_uv = vec2(UV.x, UV.y + TIME * 0.8);
+
+    // Calculate flame distortion effect
+    highp float warp1 = texture(flame1_texture, f1_uv * 2.1).r;
+    highp float warp2 = texture(flame2_texture, f2_uv * 2.1).r;
+    highp vec2 warp = vec2(warp1 - warp2, 0.0) * 0.05;
+
+    // Sample flame noise textures
+    highp float flame1_sample = texture(flame1_texture, f1_uv).r;
+    highp float flame2_sample = texture(flame2_texture, f2_uv).r;
+    highp float flame3_sample = texture(flame3_texture, f3_uv + warp).r;
+
+    // Fire shape
+    highp float shape_fade = 1.0 - sqrt(pow(UV.x - 0.5, 2.0) + pow(UV.y - 1.0, 2.0) * 0.2) * 2.0;
+
+    // Blend flame samples
+    highp float flame = ((flame1_sample + flame2_sample + flame3_sample * 1.5) / 3.5) * shape_fade;
+
+    // Cut-off values
+    highp float alpha = step(0.12, flame);
+    highp float warp_alpha = smoothstep(0.0, 0.25, flame) * 0.7;
+
+    // Sample background with warping
+    highp vec3 screen = texture(TEXTURE, SCREEN_UV + warp * warp_alpha).rgb;
+    
+    // Apply color gradient
+    highp vec3 color = texture(color_gradient, vec2(flame, 0.0)).rgb * flame * 3.5;
+
+    // Final color blending
+    COLOR = mix(vec4(screen, 1.0), blend_screen(vec4(screen, 1.0), vec4(color, 1.0)), alpha);
+}

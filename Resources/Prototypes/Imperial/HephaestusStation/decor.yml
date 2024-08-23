@@ -90,6 +90,19 @@
     - state: table_glass
 
 - type: entity
+  id: TalosMoth
+  name: filler
+  parent: BaseItem
+  description: filler
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: Talos/Misc/TopSecret/moth.rsi
+    layers:
+    - state: base
+
+- type: entity
   parent: CommunityPosterBase
   id: portret_1
   name: "We will sow in time - we will collect a mountain of grain!"

@@ -7,6 +7,8 @@
     state: icon
   - type: Clothing
     slots: [gloves]
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg
   - type: Food
     requiresSpecialDigestion: true
   - type: Item
@@ -23,6 +25,15 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Talos/Items/Drop/glove_drop.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Talos/Items/Drop/glove_drop.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/glove_pick_up.ogg
 
 - type: entity
   abstract: true
