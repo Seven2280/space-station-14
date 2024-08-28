@@ -1,9 +1,9 @@
 - type: job
-  id: talosassistant
-  name: job-name-talosassistant
-  description: job-description-talosassistant
-  playTimeTracker: Jobtalosassistant
-  startingGear: talosassistantGear
+  id: TalosAssistant
+  name: job-name-TalosAssistant
+  description: job-description-TalosAssistant
+  playTimeTracker: JobTalosAssistant
+  startingGear: TalosAssistantGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
   access: 
@@ -14,9 +14,9 @@
   - External
 
 - type: startingGear
-  id: talosassistantGear
+  id: TalosAssistantGear
   equipment:
-    id: talosassistantIDCard
+    id: TalosAssistantIDCard
     ears: ClothingHeadsetGrey
     jumpsuit: ClothingUniformJumpsuitGorlexIntern
     shoes: ClothingShoesBootsWork

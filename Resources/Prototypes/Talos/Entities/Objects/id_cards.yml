@@ -1,7 +1,7 @@
 ### ID CARDS
 - type: entity
   parent: IDCardStandard
-  id: talosassistantIDCard
+  id: TalosAssistantIDCard
   name: talosassistant ID card
   components:
   - type: Sprite

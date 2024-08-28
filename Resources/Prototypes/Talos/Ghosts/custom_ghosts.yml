@@ -1,0 +1,7 @@
+- type: customGhost
+  id: seven-ghost
+  ckey: Seven228
+  sprite: Talos/Ghosts/seven-ghost.rsi
+  alpha: 1.0
+  ghostName: Севен
+  ghostDescription: мкреекгопнрпкемыавгн
