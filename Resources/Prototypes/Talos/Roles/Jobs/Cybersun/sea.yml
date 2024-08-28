@@ -1,0 +1,22 @@
+- type: job
+  id: TalosCybersunSEA
+  name: job-name-TalosCybersunSEA
+  description: job-description-TalosCybersunSEA
+  playTimeTracker: JobTalosCybersunSEA
+  startingGear: TalosCybersunGearSEA
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-everyone
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: TalosCybersunGearSEA
+  equipment:
+    id: TalosCybersunIDCard
+    ears: ClothingHeadsetScience
+    jumpsuit: ClothingUniformJumpsuitCybersunOfficer
+    shoes: ClothingShoesBootsCybersun 
+  #storage:
+    #back:
+    #- Stuff
