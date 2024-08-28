@@ -1,0 +1,26 @@
+- type: job
+  id: TalosSELFWorker
+  name: job-name-TalosSELFWorker
+  description: job-description-TalosSELFWorker
+  playTimeTracker: JobTalosSELFWorker
+  startingGear: TalosSELFWorkerGear
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-everyone
+  access:
+  - Maintenance
+  - Engineering
+  - External
+  - Atmospherics
+
+- type: startingGear
+  id: TalosSELFWorkerGear
+  equipment:
+    id: TalosSELFWorkerIDCard
+    eyes: ClothingEyesGlassesMeson
+    ears: ClothingHeadsetEngineering
+    belt: ClothingBeltUtilityEngineering
+    jumpsuit: ClothingUniformJumpsuitSELFWorker
+    shoes: ClothingShoesBootsWork
+  #storage:
+    #back:
+    #- Stuff

@@ -75,3 +75,58 @@
     layers:
     - state: id
     - state: cmd
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosCybersunIDCard
+  name: TalosCybersun ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: cybersun
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosCybersunSEAIDCard
+  name: TalosCybersunSEA ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: cybersun
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosCybersunCommandOfficerIDCard
+  name: TalosCybersunCommandOfficer ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: cybersun
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosSELFWorkerIDCard
+  name: TalosSELFWorker ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: self
+
+- type: entity
+  parent: IDCardStandard
+  id: TalosSELFIDCard
+  name: TalosSELF ID card
+  components:
+  - type: Sprite
+    sprite: Talos/devices/id.rsi
+    layers:
+    - state: id
+    - state: self

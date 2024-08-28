@@ -1,0 +1,26 @@
+- type: job
+  id: TalosCybersunCommandOfficer
+  name: job-name-TalosCybersunCommandOfficer
+  description: job-description-TalosCybersunCommandOfficer
+  playTimeTracker: JobTalosCybersunCommandOfficer
+  startingGear: TalosCybersunGearCommandOfficer
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-everyone
+  access:
+  - Research
+  - Command
+  - Maintenance
+  - ResearchDirector
+  - Brig
+  - Cryogenics
+
+- type: startingGear
+  id: TalosCybersunGearCommandOfficer
+  equipment:
+    id: TalosCybersunIDCard
+    ears: ClothingHeadsetRD
+    jumpsuit: ClothingUniformJumpsuitCybersunCommandOfficer 
+    shoes: ClothingShoesBootsCybersunCmd 
+  #storage:
+    #back:
+    #- Stuff
