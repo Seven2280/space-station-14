@@ -15,7 +15,7 @@
 - type: startingGear
   id: TalosSELFWorkerGear
   equipment:
-    id: TalosSELFIDCard
+    id: TalosSELFWorkerIDCard
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetEngineering
     belt: ClothingBeltUtilityEngineering
