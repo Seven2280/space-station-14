@@ -1,8 +1,8 @@
 - type: job
   id: TalosInterdyneParamedic
-  name: job-name-talosinterdyne-paramedic
-  description: job-description-talosinterdyne-paramedic
-  playTimeTracker: Jobtalosinterdyneparamedic
+  name: job-name-TalosInterdyneParamedic
+  description: job-description-TalosInterdyneParamedic
+  playTimeTracker: JobTalosInterdyneParamedic
   startingGear: TalosInterdyneParamedicGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone

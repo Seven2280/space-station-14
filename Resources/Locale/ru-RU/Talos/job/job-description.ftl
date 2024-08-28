@@ -1,0 +1,12 @@
+job-description-TalosAssistant = Ассистент
+job-description-TalosCybersunCommandOfficer = Руководите научным отделом в корпорации, открывайте новые технологии, получайте и исследуйте артефакты, и проводите эксперименты.
+job-description-TalosCybersun = Исследуйте инопланетные артефакты, открывайте новые технологии, заменяйте оборудование станции новыми и усиленными его версиями, повышайте общую эффективность работы.
+job-description-TalosCybersunSEA = Старший Рядовой Советник
+job-description-TalosGorlexMasterAtArms = Управляйте своими сотрудниками и следите за их эффективностью, подавляйте насилие на станции, и обеспечивайте безопасность других Офицеров Командования.
+job-description-TalosGorlex = Ловите преступников и врагов станции, следите за соблюдением закона и за тем, чтобы станция не погрузилась в беспорядки.
+job-description-TalosGorlexVanguard = Консультант Безопасности
+job-description-TalosInterdyneCMD = Руководите медицинским отделом в корпорации, чтобы сохранить жизни и здоровье экипажа.
+job-description-TalosInterdyne = Медик
+job-description-TalosInterdyneParamedic = Парамедик
+job-description-TalosSELF = Бау-Адъютант
+job-description-TalosSELFWorker = Инженер

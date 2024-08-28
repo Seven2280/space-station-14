@@ -1,8 +1,8 @@
 - type: job
   id: TalosInterdyneCMD
-  name: job-name-talosinterdyne-cmd
-  description: job-description-talosinterdyne-cmd
-  playTimeTracker: Jobtalosinterdynecmd
+  name: job-name-TalosInterdyneCMD
+  description: job-description-TalosInterdyneCMD
+  playTimeTracker: JobTalosInterdyneCMD
   startingGear: TalosInterdyneCMDGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
