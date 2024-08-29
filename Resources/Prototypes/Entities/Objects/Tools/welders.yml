@@ -93,6 +93,7 @@
   - type: PointLight
     enabled: false
     radius: 1.5
+    energy: 3
     color: orange
     netsync: false
   - type: Appearance

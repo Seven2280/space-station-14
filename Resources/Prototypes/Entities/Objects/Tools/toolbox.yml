@@ -23,19 +23,25 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 12
+        Blunt: 14
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
   - type: Tag
     tags:
     - Toolbox
-  - type: GenericVisualizer
-    visuals:
-      enum.StorageVisuals.Open:
-        base:
-          True: { state: icon-open }
-          False: { state: icon }
+  # - type: GenericVisualizer
+  #   visuals:
+  #     enum.StorageVisuals.Open:
+  #       base:
+  #         True: { state: icon-open }
+  #         False: { state: icon }
   - type: Appearance
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Talos/Items/PickUp/toolbox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
 
 - type: entity
   name: emergency toolbox

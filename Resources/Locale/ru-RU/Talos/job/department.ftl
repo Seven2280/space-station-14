@@ -1,7 +1,7 @@
 department-CommandOfficers = Офицеры Командования
-department-Gorlex = Corporation Gorlex
-department-Interdyne = Corporation Interdyne
-department-Cybersun = Corporation Cybersun
+department-Gorlex = Gorlex Securities LLC
+department-Interdyne = Interdyne Pharmaceutics
+department-Cybersun = Cybersun Industries
 department-SELF = Corporation SELF
-department-WaffleCo = Corporation WaffleCo
+department-WaffleCo = WaffleCo
 department-Gastarbajter = Гастарбайтеры

@@ -4,9 +4,9 @@
   description: job-description-TalosVanguard
   playTimeTracker: JobTalosGorlexVanguard
   startingGear: TalosGorlexVanguardGear
-  icon: "JobIconWarden"
+  icon: "JobIconHeadOfSecurity"
   supervisors: job-supervisors-everyone
-  access: 
+  access:
   - Maintenance
   - Cargo
   - Security
