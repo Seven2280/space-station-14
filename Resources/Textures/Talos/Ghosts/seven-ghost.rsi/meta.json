@@ -1,14 +1,14 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-  "copyright": "Adidas",
-    "size": {
-      "x": 256,
-      "y": 256
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by @seven221",
+  "size": {
+    "x": 48,
+    "y": 32
   },
   "states": [
-        {
-            "name": "animated"
-        }
-    ]
+    {
+      "name": "animated"
+    }
+  ]
 }

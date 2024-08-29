@@ -1,0 +1,144 @@
+- type: entity
+  id: SpawnPointTalosAssistant
+  parent: SpawnPointJobBase
+  name: TalosAssistant
+  components:
+  - type: SpawnPoint
+    job_id: TalosAssistant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosSELF
+  parent: SpawnPointJobBase
+  name: TalosSELF
+  components:
+  - type: SpawnPoint
+    job_id: TalosSELF
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosSELFWorker
+  parent: SpawnPointJobBase
+  name: TalosSELFWorker
+  components:
+  - type: SpawnPoint
+    job_id: TalosSELFWorker
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosCybersunCommandOfficer
+  parent: SpawnPointJobBase
+  name: TalosCybersunCommandOfficer
+  components:
+  - type: SpawnPoint
+    job_id: TalosCybersunCommandOfficer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosCybersunSEA
+  parent: SpawnPointJobBase
+  name:  TalosCybersunSEA
+  components:
+  - type: SpawnPoint
+    job_id: TalosCybersunSEA
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosCybersun
+  parent: SpawnPointJobBase
+  name: TalosCybersun
+  components:
+  - type: SpawnPoint
+    job_id: TalosCybersun
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosInterdyneCMD
+  parent: SpawnPointJobBase
+  name: TalosInterdyneCMD
+  components:
+  - type: SpawnPoint
+    job_id: TalosInterdyneCMD
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosInterdyneParamedic
+  parent: SpawnPointJobBase
+  name: TalosInterdyneParamedic
+  components:
+  - type: SpawnPoint
+    job_id: TalosInterdyneParamedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosInterdyne
+  parent: SpawnPointJobBase
+  name: TalosInterdyne
+  components:
+  - type: SpawnPoint
+    job_id: TalosInterdyne
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosGorlexMasterAtArms
+  parent: SpawnPointJobBase
+  name: TalosGorlexMasterAtArms
+  components:
+  - type: SpawnPoint
+    job_id: TalosGorlexMasterAtArms
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosGorlexVanguard
+  parent: SpawnPointJobBase
+  name: TalosGorlexVanguard
+  components:
+  - type: SpawnPoint
+    job_id: TalosGorlexVanguard
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointTalosGorlex
+  parent: SpawnPointJobBase
+  name: TalosGorlex
+  components:
+  - type: SpawnPoint
+    job_id: TalosGorlex
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
