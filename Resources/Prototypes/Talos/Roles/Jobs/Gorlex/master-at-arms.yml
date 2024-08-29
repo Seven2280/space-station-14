@@ -4,9 +4,9 @@
   description: job-description-TalosGorlexMasterAtArms
   playTimeTracker: JobTalosGorlexMasterAtArms
   startingGear: TalosGorlexMasterAtArmsGear
-  icon: "JobIconHeadOfSecurity"
+  icon: "JobIconWarden"
   supervisors: job-supervisors-everyone
-  access: 
+  access:
   - Maintenance
   - Cargo
   - Security

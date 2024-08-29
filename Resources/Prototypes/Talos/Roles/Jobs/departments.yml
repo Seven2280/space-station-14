@@ -3,7 +3,7 @@
   description: department-Command-description
   color: "#291621"
   roles:
-   - TalosGorlexMasterAtArms
+   - TalosGorlexVanguard
    - TalosInterdyneCMD
    - TalosCybersunCommandOfficer
    - TalosSELF
@@ -13,8 +13,8 @@
   description: department-Gorlex-description
   color: "#c13623"
   roles:
-   - TalosGorlexMasterAtArms
    - TalosGorlexVanguard
+   - TalosGorlexMasterAtArms
    - TalosGorlex
 
 - type: department
