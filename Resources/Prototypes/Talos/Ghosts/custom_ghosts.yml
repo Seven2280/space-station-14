@@ -1,11 +1,10 @@
 - type: customGhost
   id: seven-ghost
   ckey: Seven228
-  sprite: Talos/Ghosts/seven2-ghost.rsi
+  sprite: Talos/Ghosts/seven-ghost.rsi
   alpha: 0.8
   ghostName: Севен
   ghostDescription: мкреекгопнрпкемыавгн
-  size: 0.25, 0.25
 
 - type: customGhost
   id: sentry-ghost
