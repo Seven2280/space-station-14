@@ -1,0 +1,44 @@
+# - type: entity
+#   parent: ClothingShoesBase
+#   id: ClothingBootsModsuitCESealed
+#   noSpawn: true
+#   name: salvage modsuit helmet
+#   description: Special hardsuit helmet, made for the captain of the station.
+#   components:
+#   - type: Sprite
+#     sprite: Imperial/Modsuits/Clothing/Shoes/advanced.rsi
+#   - type: Clothing
+#     sprite: Imperial/Modsuits/Clothing/Shoes/advanced.rsi
+#     equipSound: /Audio/Imperial/Modsuits/ballin.ogg
+#     unequipSound: /Audio/Imperial/Modsuits/ballout.ogg
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Shock: 0.8
+#         Heat: 0.8
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 200
+#   - type: ToggleableClothing
+#     clothingPrototype: ClothingHeadHelmetModsuitCESealed
+#     slot: head
+#     requiredSlot: feet
+#   - type: Magboots
+#     toggleAction: ActionToggleMagbootsModsuitAdvanced
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#     enabled: false
+#   - type: NoSlip
+#   - type: Tag
+#     tags:
+#     - WhitelistChameleon
+
+# - type: entity
+#   id: ActionToggleMagbootsModsuitAdvanced
+#   parent: ActionBaseToggleMagboots
+#   noSpawn: true
+#   components:
+#   - type: InstantAction
+#     icon: { sprite: Imperial/Modsuits/Clothing/Shoes/advanced.rsi, state: icon }
+#     iconOn: Imperial/Modsuits/Clothing/Shoes/advanced.rsi/icon-on.png

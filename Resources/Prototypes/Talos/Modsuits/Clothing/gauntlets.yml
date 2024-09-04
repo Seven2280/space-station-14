@@ -1,0 +1,30 @@
+# - type: entity
+#   parent: ClothingHandsBase
+#   id: ClothingGauntletsModsuitCESealed
+#   noSpawn: true
+#   name: salvage modsuit helmet
+#   description: Special hardsuit helmet, made for the captain of the station.
+#   components:
+#   - type: Sprite
+#     sprite: Imperial/Modsuits/Clothing/Hands/advanced.rsi
+#   - type: Clothing
+#     sprite: Imperial/Modsuits/Clothing/Hands/advanced.rsi
+#     equipSound: /Audio/Imperial/Modsuits/ballin.ogg
+#     unequipSound: /Audio/Imperial/Modsuits/ballout.ogg
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Shock: 0.8
+#         Heat: 0.8
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 200
+#   - type: ToggleableClothing
+#     clothingPrototype: ClothingBootsModsuitCESealed
+#     slot: shoes
+#     requiredSlot: gloves
+#   - type: GloveHeatResistance
+#     heatResistance: 1400
+#   - type: Insulated

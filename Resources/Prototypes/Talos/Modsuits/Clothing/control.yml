@@ -1,0 +1,69 @@
+- type: entity #Commented value in armor = overall defence
+  parent: ClothingBackpack
+  id: ClothingControlModsuitBase
+  abstract: true
+  name: CE modsuit helmet
+  description: Special hardsuit helmet, made for the CE of the station.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Modsuits/advanced.rsi
+  - type: Clothing
+    sprite: Clothing/Back/Modsuits/advanced.rsi
+    equipSound: /Audio/Imperial/Modsuits/ballin.ogg
+    unequipSound: /Audio/Imperial/Modsuits/ballout.ogg
+  - type: Armor
+    modifiers:
+      coefficients:
+        Shock: 0.7
+        Caustic: 0.7
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterChestplateModsuitCESealed
+    requiredSlot: back
+    slot: outerClothing
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+  - type: PointLight
+    color: "#a0f1e8"
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    radius: 12
+    softness: 20
+    autoRot: true
+  - type: UnpoweredFlashlight
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 80
+  #     4: 20
+  #     5: 0
+  #     6: 0
+  #  СВЕРХУ ЭТО РАЗКОММЕНТИТь!!!
