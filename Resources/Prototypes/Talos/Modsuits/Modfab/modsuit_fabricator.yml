@@ -28,18 +28,7 @@
       - ChestplateModsuitConstructing
       - GauntletsModsuitConstructing
       - BootsModsuitConstructing
-      - PlatingCivillianModsuitConstructing
-      - PlatingMedicalModsuitConstructing
-    dynamicRecipes:
-      - PlatingMagnateModsuitConstructing
-      - PlatingSecurityModsuitConstructing
-      - PlatingHOSModsuitConstructing
-      - PlatingCMOModsuitConstructing
-      - PlatingCEModsuitConstructing
-      - PlatingAsteroidModsuitConstructing
-      - PlatingRNDModsuitConstructing
-      - PlatingEngineeringModsuitConstructing
-      - PlatingAtmosphericModsuitConstructing
+#    dynamicRecipes:
   - type: MaterialStorage
     whitelist:
       tags:

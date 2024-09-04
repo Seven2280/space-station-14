@@ -1,0 +1,26 @@
+- type: entity
+  name: ModSuit Storage Base
+  abstract: true
+  description: ModSuit Storage
+  id: ModSuitStorageBase
+  parent: SuitStorageBase
+  suffix: Chief Engineer
+  components:
+  - type: Sprite
+    sprite: Imperial/Modsuits/suit_storage.rsi
+
+- type: entity
+  name: ModSuit Storage CE
+  description: ModSuit Storage
+  id: ModSuitStorageCE
+  parent: ModSuitStorageBase
+  suffix: Chief Engineer
+  components:
+  - type: StorageFill
+    contents:
+        - id: NitrogenTankFilled
+        - id: OxygenTankFilled
+        - id: JetpackVoidFilled
+        - id: ClothingShoesBootsMagAdv
+        - id: ClothingControlModsuitCESealed
+        - id: ClothingMaskGasAtmos

@@ -1,0 +1,35 @@
+- type: entity #мосьюты
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterChestplateModsuitSealedBase
+  name: marine modsuit
+  abstract: true
+  description: A special suit that protects against hazardous, low pressure environments. Has radiation shielding.
+  components:
+  - type: Sprite
+    sprite: Imperial/Modsuits/Clothing/OuterClothing/advanced.rsi
+  - type: Clothing
+    sprite: Imperial/Modsuits/Clothing/OuterClothing/advanced.rsi
+    equipSound: /Audio/Imperial/Modsuits/ballin.ogg
+    unequipSound: /Audio/Imperial/Modsuits/ballout.ogg
+  - type: PressureProtection
+    highPressureMultiplier: 0.00002
+    lowPressureMultiplier: 1000
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetModsuitCESealed
+    requiredSlot: outerClothing
+    slot: head
+  - type: TemperatureProtection
+    coefficient: 0.00001
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 80
+  #     4: 20
+  #     5: 0
+  #     6: 0
+  # СВЕРХУ ЭТО РАЗКОММЕНТИТь!!!
