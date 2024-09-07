@@ -1,0 +1,129 @@
+- type: entity
+  name: Боевая Оболочка Терраговернмент
+  description: Гуманоидное тело с биомеханическими чертами и бледной кожей, выделяющимися рёбрами и мускулатурой. Тело высоко и стройно; голова без привычных черт лица, ротовая полость похожа всеми чертами на вагину. Туловище обладает животом с плодом. Ноги с чётко прорисованной мускулатурой с крупными ступнями для устойчивости.
+  id: TalosPregnantShell
+  parent: MobSiliconBase
+  components:
+  # - type: UserInterface
+  #   interfaces:
+  #   - key: enum.StrippingUiKey.Key
+  #     type: StrippableBoundUserInterface
+  - type: GhostTakeoverAvailable
+    makeSentient: true
+  - type: GhostRole
+    name: Боевая Оболочка Терраговернмент #Placeholder
+    description: Боевая Оболочка Терраговермент. Ты -- всё еще человек, только мозг твой помещён в специально оборудованный биомеханический экзокостюм.
+    rules: |
+     Хоть ты и и человек, но биомеханическое тело запрограммировано таким образом, что...
+     1. Твои возвышенные (над остальными людьми) когнитивные навыки активировались в случае если ты испытываешь страх (за жизнь, за страну, за трамвайчик и мороженку..)
+     2. Вы были подвернуты психологичекой обработке. Вы чисто **физически** не можете предать Терраговернмент.
+     3. Big Chungus
+     И Да, этот красный "камень" на твоём торсо -- беременный живот. Но ты должен использовать мужские местоимения.
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 6
+  - type: MobState
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: NoSlip
+  - type: StatusEffects
+    allowed:
+    - KnockedDown
+    - SlowedDown
+  - type: Temperature
+    heatDamageThreshold: 5000
+    currentTemperature: 310.15
+    specificHeat: 42
+    heatDamage:
+      types:
+        Heat : 0.25
+  - type: Sprite
+    drawdepth: Mobs
+    netsync: false
+    layers:
+    - state: shell
+      sprite: Talos/Mobs/TG/pregnant_shell.rsi
+  - type: Appearance
+    rotate: true
+    states:
+      Alive:
+        Base: shell
+  - type: CombatMode
+  - type: MeleeWeapon
+    hidden: true
+    damage:
+      groups:
+        Brute: 19
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage: #per second, scales with number of fire 'stacks'
+      types:
+        Heat: 1 #Epic
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Standing
+  - type: IntrinsicRadioReceiver
+  - type: Puller
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+  - type: ZombieImmune
+  - type: Speech
+    speechSounds: PregnantShellSounds
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MeatBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MeatLaserImpact
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+  - type: Hands
+  - type: Buckle
+  - type: InteractionPopup
+    successChance: 1
+    interactSuccessString: hugging-success-generic
+    interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+    messagePerceivedByOthers: hugging-success-generic-others
+  - type: StandingState
+  - type: Fingerprint
+  - type: Dna
+  - type: MindContainer
+    showExamineInfo: true
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepPregnantShell
+      params:
+        volume: -10
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+    - CanPilot
+
+- type: speechSounds
+  id: PregnantShellSounds
+  saySound:
+    path: /Audio/Talos/Mob/shells/shellheavybreath.ogg
+  askSound:
+    path: /Audio/Talos/Mob/shells/shellheavybreath.ogg
+  exclaimSound:
+    path: /Audio/Talos/Mob/shells/shellheavybreath.ogg
+
+- type: soundCollection
+  id: FootstepPregnantShell
+  files:
+  - /Audio/Talos/Mob/shells/pregnant_shell_footstep.ogg

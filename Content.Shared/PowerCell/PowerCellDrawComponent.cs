@@ -42,7 +42,7 @@ public sealed partial class PowerCellDrawComponent : Component
     /// Set to 0 if you just wish to check for power upon opening the UI.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("drawRate")]
-    public float DrawRate = 1f;
+    public float DrawRate = 0.25f;
 
     /// <summary>
     /// How much power is used whenever the entity is "used".

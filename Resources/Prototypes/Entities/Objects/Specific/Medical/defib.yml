@@ -54,7 +54,7 @@
   components:
   - type: MultiHandedItem
   - type: PowerCellDraw
-    useRate: 100
+    useRate: 25
 
 - type: entity
   id: DefibrillatorEmpty

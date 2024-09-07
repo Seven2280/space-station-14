@@ -25,7 +25,7 @@
           True: { visible: true }
           False: { visible: false }
   - type: PowerCellDraw
-    drawRate: 3
+    drawRate: 0.25
     useRate: 100
   - type: ActivatableUI
     key: enum.RadarConsoleUiKey.Key

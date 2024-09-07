@@ -97,7 +97,13 @@
         beaker:
           reagents:
             - ReagentId: Carbon
-              Quantity: 200
+              Quantity: 200 ##all regenerate components from talos station!!
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -114,6 +120,12 @@
           reagents:
             - ReagentId: Iodine
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Iodine
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -130,6 +142,12 @@
           reagents:
             - ReagentId: Fluorine
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Fluorine
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -146,6 +164,12 @@
           reagents:
             - ReagentId: Chlorine
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Chlorine
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -162,6 +186,12 @@
           reagents:
             - ReagentId: Aluminium
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Aluminium
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -178,6 +208,12 @@
           reagents:
             - ReagentId: Phosphorus
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Phosphorus
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -194,6 +230,12 @@
           reagents:
             - ReagentId: Sulfur
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Sulfur
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -210,6 +252,12 @@
           reagents:
             - ReagentId: Silicon
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Silicon
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -226,6 +274,12 @@
           reagents:
             - ReagentId: Hydrogen
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Hydrogen
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -242,6 +296,12 @@
           reagents:
             - ReagentId: Lithium
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Lithium
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -258,6 +318,12 @@
           reagents:
             - ReagentId: Sodium
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Sodium
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -274,6 +340,12 @@
           reagents:
             - ReagentId: Potassium
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Potassium
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -290,6 +362,12 @@
           reagents:
             - ReagentId: Radium
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Radium
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -306,6 +384,12 @@
           reagents:
             - ReagentId: Iron
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Iron
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -322,6 +406,12 @@
           reagents:
             - ReagentId: Copper
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Copper
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -338,6 +428,12 @@
           reagents:
             - ReagentId: Gold
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Gold
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -354,6 +450,12 @@
           reagents:
             - ReagentId: Mercury
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Mercury
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -370,6 +472,12 @@
           reagents:
             - ReagentId: Silver
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Silver
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -386,6 +494,12 @@
           reagents:
             - ReagentId: Ethanol
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Ethanol
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -402,6 +516,12 @@
           reagents:
             - ReagentId: Sugar
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -418,6 +538,12 @@
           reagents:
             - ReagentId: Nitrogen
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Nitrogen
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -434,6 +560,12 @@
           reagents:
             - ReagentId: Oxygen
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: Oxygen
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -450,6 +582,12 @@
           reagents:
             - ReagentId: PlantBGone
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: PlantBGone
+          Quantity: 5
 
 - type: entity
   parent: Jug
@@ -466,3 +604,9 @@
           reagents:
             - ReagentId: WeldingFuel
               Quantity: 200
+    - type: SolutionRegeneration
+      solution: beaker
+      generated:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 5

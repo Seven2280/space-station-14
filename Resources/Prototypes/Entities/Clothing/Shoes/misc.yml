@@ -115,7 +115,7 @@
   - type: StaticPrice
     price: 500
   - type: PowerCellDraw
-    drawRate: 4
+    drawRate: 2
   - type: ItemSlots
     slots:
       cell_slot:
