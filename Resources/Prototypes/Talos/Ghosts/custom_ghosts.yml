@@ -1,6 +1,6 @@
 - type: customGhost
   id: seven-ghost
-  ckey: Seven228
+  ckey: localhost@Seven228
   sprite: Talos/Ghosts/seven-ghost.rsi
   alpha: 0.8
   ghostName: Севен

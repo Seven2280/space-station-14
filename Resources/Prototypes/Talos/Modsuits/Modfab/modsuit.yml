@@ -1,0 +1,54 @@
+- type: latheRecipe
+  id: ControlModsuitConstructingStart
+  result: ControlModsuitConstructingStart
+  completetime: 10
+  materials:
+    Steel: 100
+    Plasma: 200
+
+- type: latheRecipe
+  id: HelmetModsuitConstructing
+  result: HelmetModsuitConstructing
+  completetime: 10
+  materials:
+    Steel: 200
+    Glass: 200
+
+- type: latheRecipe
+  id: ChestplateModsuitConstructing
+  result: ChestplateModsuitConstructing
+  completetime: 10
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: GauntletsModsuitConstructing
+  result: GauntletsModsuitConstructing
+  completetime: 10
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: BootsModsuitConstructing
+  result: BootsModsuitConstructing
+  completetime: 10
+  materials:
+    Steel: 100
+
+- type: entity
+  id: ModsuitFabricatorMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: mod fabricator machine board
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: ModsuitFab
+    requirements:
+      MatterBin: 1
+      Manipulator: 1
+    materialRequirements:
+      Glass: 2
+  - type: GuideHelp
+    guides:
+    - Robotics
