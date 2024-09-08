@@ -22,7 +22,7 @@
     state: incendiarydisplay
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 7500
   recipeUnlocks:
   - BoxShotgunIncendiary
   - MagazineRifleIncendiary
@@ -35,17 +35,17 @@
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxRifleIncendiary
 
-- type: technology
-  id: WeaponizedLaserManipulation
-  name: research-technology-weaponized-laser-manipulation
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - WeaponLaserCarbine
+# - type: technology
+#   id: WeaponizedLaserManipulation
+#   name: research-technology-weaponized-laser-manipulation
+#   icon:
+#     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+#     state: icon
+#   discipline: Arsenal
+#   tier: 1
+#   cost: 7500
+#   recipeUnlocks:
+#   - WeaponLaserCarbine
 
 - type: technology
   id: NonlethalAmmunition
@@ -55,12 +55,12 @@
     state: beanbag
   discipline: Arsenal
   tier: 1
-  cost: 5000
+  cost: 2500
   recipeUnlocks:
   - MagazineShotgunBeanbag
-  - BoxShellTranquilizer 
-  - BoxBeanbag 
-  - WeaponDisabler
+  - BoxShellTranquilizer
+  - BoxBeanbag
+  #- WeaponDisabler
 
 - type: technology
   id: UraniumMunitions
@@ -70,7 +70,7 @@
     state: uranium
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 5000
   recipeUnlocks:
   - MagazineRifleUranium
   - MagazinePistolUranium
@@ -90,7 +90,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 8000
+  cost: 6000
   recipeUnlocks:
   - Truncheon
   - TelescopicShield
@@ -99,13 +99,13 @@
 
 - type: technology
   id: ExplosiveTechnology
-  name: research-technology-explosive-technology
+  name: research-technology-explosive-technology ## move to cybersun
   icon:
     sprite: Objects/Devices/payload.rsi
     state: payload-explosive-armed
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 5000
   recipeUnlocks:
   - SignallerAdvanced
   - SignalTrigger
@@ -117,17 +117,17 @@
 
 # Tier 2
 
-- type: technology
-  id: ConcentratedLaserWeaponry
-  name: research-technology-concentrated-laser-weaponry
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - WeaponLaserCannon
+# - type: technology
+#   id: ConcentratedLaserWeaponry
+#   name: research-technology-concentrated-laser-weaponry
+#   icon:
+#     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+#     state: icon
+#   discipline: Arsenal
+#   tier: 2
+#   cost: 10000
+#   recipeUnlocks:
+#   - WeaponLaserCannon
 
 - type: technology
   id: WaveParticleHarnessing
@@ -137,19 +137,19 @@
     state: icon
   discipline: Arsenal
   tier: 2
-  cost: 10000
+  cost: 7500
   recipeUnlocks:
   - WeaponXrayCannon
 
 - type: technology
   id: BasicShuttleArmament
   name: research-technology-basic-shuttle-armament
-  icon: 
+  icon:
     sprite: Structures/Power/cage_recharger.rsi
     state: full
   discipline: Arsenal
   tier: 2
-  cost: 10500
+  cost: 7500
   recipeUnlocks:
   - PowerCageRechargerCircuitboard
   - PowerCageSmall
@@ -165,18 +165,18 @@
 
 # Tier 3
 
-- type: technology
-  id: PortableMicrofusionWeaponry
-  name: research-technology-portable-microfusion-weaponry
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - WeaponAdvancedLaser
-  - PortableRecharger
+# - type: technology
+#   id: PortableMicrofusionWeaponry
+#   name: research-technology-portable-microfusion-weaponry
+#   icon:
+#     sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+#     state: icon
+#   discipline: Arsenal
+#   tier: 3
+#   cost: 15000
+#   recipeUnlocks:
+#   - WeaponAdvancedLaser
+#   - PortableRecharger
 
 - type: technology
   id: ExperimentalBatteryAmmo
@@ -186,19 +186,19 @@
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - WeaponLaserSvalinn
-  
+
 - type: technology
   id: AdvancedShuttleWeapon
   name: research-technology-advanced-shuttle-weapon
-  icon: 
+  icon:
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 7500
   recipeUnlocks:
   - GrenadeEMP
   - PowerCageHigh
