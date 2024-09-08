@@ -1,43 +1,43 @@
-using System.Numerics;
-using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
-using Robust.Shared.Utility;
+// using System.Numerics;
+// using Robust.Shared.Prototypes;
+// using Robust.Shared.Serialization;
+// using Robust.Shared.Utility;
 
-namespace Content.Shared._White.CustomGhostSystem;
+// namespace Content.Shared._White.CustomGhostSystem;
 
-/// <summary>
-/// This is a prototype for...
-/// </summary>
-[Prototype("customGhost")]
-public sealed class CustomGhostPrototype : IPrototype
-{
-    /// <inheritdoc/>
-    [IdDataField]
-    public string ID { get; } = default!;
+// /// <summary>
+// /// This is a prototype for...
+// /// </summary>
+// [Prototype("customGhost")]
+// public sealed class CustomGhostPrototype : IPrototype
+// {
+//     /// <inheritdoc/>
+//     [IdDataField]
+//     public string ID { get; } = default!;
 
-    [DataField("ckey", required: true)]
-    public string Ckey { get; } = default!;
+//     [DataField("ckey", required: true)]
+//     public string Ckey { get; } = default!;
 
-    [DataField("sprite", required: true)]
-    public ResPath CustomSpritePath { get; } = default!;
+//     [DataField("sprite", required: true)]
+//     public ResPath CustomSpritePath { get; } = default!;
 
-    [DataField("alpha")]
-    public float AlphaOverride { get; } = -1;
+//     [DataField("alpha")]
+//     public float AlphaOverride { get; } = -1;
 
-    [DataField("ghostName")]
-    public string GhostName = string.Empty;
+//     [DataField("ghostName")]
+//     public string GhostName = string.Empty;
 
-    [DataField("ghostDescription")]
-    public string GhostDescription = string.Empty;
+//     [DataField("ghostDescription")]
+//     public string GhostDescription = string.Empty;
 
-    [DataField("size")]
-    public Vector2 SizeOverride = Vector2.One;
-}
+//     [DataField("size")]
+//     public Vector2 SizeOverride = Vector2.One;
+// }
 
-[Serializable, NetSerializable]
-public enum CustomGhostAppearance
-{
-    Sprite,
-    AlphaOverride,
-    SizeOverride
-}
+// [Serializable, NetSerializable]
+// public enum CustomGhostAppearance
+// {
+//     Sprite,
+//     AlphaOverride,
+//     SizeOverride
+// }

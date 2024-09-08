@@ -1,16 +1,16 @@
-- type: customGhost
-  id: seven-ghost
-  ckey: localhost@Seven228
-  sprite: Talos/Ghosts/seven-ghost.rsi
-  alpha: 0.8
-  ghostName: Севен
-  ghostDescription: мкреекгопнрпкемыавгн
+# - type: customGhost
+#   id: seven-ghost
+#   ckey: localhost@Seven228
+#   sprite: Talos/Ghosts/seven-ghost.rsi
+#   alpha: 0.8
+#   ghostName: Севен
+#   ghostDescription: мкреекгопнрпкемыавгн
 
-- type: customGhost
-  id: sentry-ghost
-  ckey: localhost@PrimiesKeli
-  sprite: Talos/Ghosts/sentry-ghost.rsi
-  alpha: 0.8
-  ghostName: Sentryprimis
-  ghostDescription: мкреекгопнрпкемыавгн
-  size: 0.25, 0.25
+# - type: customGhost
+#   id: sentry-ghost
+#   ckey: localhost@PrimiesKeli
+#   sprite: Talos/Ghosts/sentry-ghost.rsi
+#   alpha: 0.8
+#   ghostName: Sentryprimis
+#   ghostDescription: мкреекгопнрпкемыавгн
+#   size: 0.25, 0.25
