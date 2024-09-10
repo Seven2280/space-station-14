@@ -102,7 +102,7 @@
     slots: WITHOUT_POCKET
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing]
+  parent: [ ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing, ClothingOuterBaseToggleable ]
   id: ClothingOuterSuitRad
   name: radiation suit
   description: "A suit that protects against radiation. The label reads, 'Made with lead. Please do not consume insulation.'"
@@ -120,9 +120,6 @@
   - type: ToggleableClothing
     clothingPrototypes: 
       head: ClothingHeadHatHoodRad
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:Container {}
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
 
@@ -236,7 +233,7 @@
     slots: WITHOUT_POCKET
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: [ ClothingOuterBase, ClothingOuterBaseToggleable ]
   id: ClothingOuterSuitIan
   name: ian suit
   description: Who's a good boy?
@@ -250,9 +247,6 @@
   - type: ToggleableClothing
     clothingPrototypes: 
       head: ClothingHeadHatHoodIan
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:Container {}
   - type: Construction
     graph: ClothingOuterSuitIan
     node: suit
@@ -260,7 +254,7 @@
     slots: WITHOUT_POCKET
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: [ ClothingOuterBase, ClothingOuterBaseToggleable ]
   id: ClothingOuterSuitCarp
   name: carp suit
   description: A special suit that makes you look just like a space carp, if your eyesight is bad.
@@ -275,9 +269,6 @@
   - type: ToggleableClothing
     clothingPrototypes: 
       head: ClothingHeadHatHoodCarp
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:Container {}
 
 - type: entity
   parent: ClothingOuterSuitCarp
