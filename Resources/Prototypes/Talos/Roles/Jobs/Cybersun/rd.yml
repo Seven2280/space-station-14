@@ -11,16 +11,18 @@
   - Command
   - Maintenance
   - ResearchDirector
-  - Brig
+  - Cargo
+  - Salvage
   - Cryogenics
+  - External
 
 - type: startingGear
   id: TalosCybersunGearCommandOfficer
   equipment:
     id: TalosCybersunIDCard
     ears: ClothingHeadsetRD
-    jumpsuit: ClothingUniformJumpsuitCybersunCommandOfficer 
-    shoes: ClothingShoesBootsCybersunCmd 
+    jumpsuit: ClothingUniformJumpsuitCybersunCommandOfficer
+    shoes: ClothingShoesBootsCybersunCmd
   #storage:
     #back:
     #- Stuff

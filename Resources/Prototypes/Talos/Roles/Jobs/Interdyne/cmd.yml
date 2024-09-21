@@ -6,7 +6,7 @@
   startingGear: TalosInterdyneCMDGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
-  access: 
+  access:
   - Maintenance
   - Cargo
   - Salvage
@@ -15,7 +15,6 @@
   - Medical
   - Chemistry
   - Service
-  - Brig
 
 - type: startingGear
   id: TalosInterdyneCMDGear

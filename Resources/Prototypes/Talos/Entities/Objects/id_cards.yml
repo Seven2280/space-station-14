@@ -9,6 +9,8 @@
     layers:
     - state: id
     - state: assistant
+  - type: PresetIdCard
+    job: TalosAssistant
 
 - type: entity
   parent: IDCardStandard
@@ -20,6 +22,8 @@
     layers:
     - state: id
     - state: gorlex-1
+  - type: PresetIdCard
+    job: TalosGorlex
 
 - type: entity
   parent: IDCardStandard
@@ -31,6 +35,8 @@
     layers:
     - state: id
     - state: gorlex-2
+  - type: PresetIdCard
+    job: TalosGorlexVanguard
 
 - type: entity
   parent: IDCardStandard
@@ -42,6 +48,8 @@
     layers:
     - state: id
     - state: cmd
+  - type: PresetIdCard
+    job: TalosGorlexMasterAtArms
 
 - type: entity
   parent: IDCardStandard
@@ -53,6 +61,8 @@
     layers:
     - state: id
     - state: interdyne-1
+  - type: PresetIdCard
+    job: TalosInterdyne
 
 - type: entity
   parent: IDCardStandard
@@ -64,6 +74,8 @@
     layers:
     - state: id
     - state: interdyne-2
+  - type: PresetIdCard
+    job: TalosInterdyneParamedic
 
 - type: entity
   parent: IDCardStandard
@@ -75,6 +87,8 @@
     layers:
     - state: id
     - state: cmd
+  - type: PresetIdCard
+    job: TalosInterdyneCMD
 
 - type: entity
   parent: IDCardStandard
@@ -86,6 +100,8 @@
     layers:
     - state: id
     - state: cybersun
+  - type: PresetIdCard
+    job: TalosCybersun
 
 - type: entity
   parent: IDCardStandard
@@ -97,6 +113,8 @@
     layers:
     - state: id
     - state: cybersun
+  - type: PresetIdCard
+    job: TalosCybersunSEA
 
 - type: entity
   parent: IDCardStandard
@@ -108,6 +126,8 @@
     layers:
     - state: id
     - state: cybersun
+  - type: PresetIdCard
+    job: TalosCybersunCommandOfficer
 
 - type: entity
   parent: IDCardStandard
@@ -119,6 +139,8 @@
     layers:
     - state: id
     - state: self
+  - type: PresetIdCard
+    job: TalosSELFWorker
 
 - type: entity
   parent: IDCardStandard
@@ -130,3 +152,5 @@
     layers:
     - state: id
     - state: self
+  - type: PresetIdCard
+    job: TalosSELF

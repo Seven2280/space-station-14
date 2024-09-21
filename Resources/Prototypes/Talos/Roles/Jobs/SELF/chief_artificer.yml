@@ -13,8 +13,10 @@
   - External
   - ChiefEngineer
   - Atmospherics
-  - Brig
+  - Cargo
+  - Salvage
   - Cryogenics
+  - External
 
 - type: startingGear
   id: TalosSELFGear

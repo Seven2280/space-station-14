@@ -11,6 +11,9 @@
   - Engineering
   - External
   - Atmospherics
+  - Cargo
+  - Salvage
+  - Cryogenics
 
 - type: startingGear
   id: TalosSELFWorkerGear

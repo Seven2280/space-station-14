@@ -126,4 +126,12 @@
 - type: soundCollection
   id: FootstepPregnantShell
   files:
-  - /Audio/Talos/Mob/shells/pregnant_shell_footstep.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_1.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_2.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_3.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_4.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_5.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_6.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_7.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_8.ogg
+   - /Audio/Talos/Mob/shells/pregnant_shell_footstep_9.ogg

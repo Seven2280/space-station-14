@@ -9,6 +9,10 @@
   access:
   - Research
   - Maintenance
+  - Cargo
+  - Salvage
+  - Cryogenics
+  - External
 
 - type: startingGear
   id: TalosCybersunGearSEA
@@ -16,7 +20,7 @@
     id: TalosCybersunSEAIDCard
     ears: ClothingHeadsetScience
     jumpsuit: ClothingUniformJumpsuitCybersunOfficer
-    shoes: ClothingShoesBootsCybersun 
+    shoes: ClothingShoesBootsCybersun
   #storage:
     #back:
     #- Stuff
