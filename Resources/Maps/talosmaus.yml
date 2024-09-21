@@ -113,7 +113,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Maus
+      name: Moose
     - type: Transform
     - type: Map
       mapPaused: True
@@ -126,7 +126,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: NT14 Maus
+      name: Frontier Moose
     - type: Transform
       pos: -1.1719341,5.420883
       parent: 1
@@ -7583,7 +7583,7 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: BecomesStation
-      id: Maus
+      id: TalosMaus
     - type: Joint
       joints:
         docking847455: !type:WeldJoint
@@ -11096,9 +11096,6 @@ entities:
     - type: Door
       secondsUntilStateChange: -1821.2157
       state: Opening
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: True
   - uid: 158
     components:
     - type: Transform
@@ -11541,10 +11538,6 @@ entities:
     - type: Docking
       dockJointId: docking847454
       dockedWith: 17560
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: False
-        DockStatus: True
   - uid: 222
     components:
     - type: Transform
@@ -11554,10 +11547,6 @@ entities:
     - type: Docking
       dockJointId: docking847455
       dockedWith: 17561
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: False
-        DockStatus: True
   - uid: 17560
     components:
     - type: Transform
@@ -11566,10 +11555,6 @@ entities:
     - type: Docking
       dockJointId: docking847454
       dockedWith: 221
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: False
-        DockStatus: True
   - uid: 17561
     components:
     - type: Transform
@@ -11578,10 +11563,6 @@ entities:
     - type: Docking
       dockJointId: docking847455
       dockedWith: 222
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: False
-        DockStatus: True
 - proto: AirlockExternalLocked
   entities:
   - uid: 223
@@ -20801,43 +20782,23 @@ entities:
       parent: 16726
     - type: DeviceLinkSink
       invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        17227:
-        - DoorStatus: InputA
-        17228:
-        - DoorStatus: InputB
   - uid: 16748
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -4.5,-2.5
       parent: 16726
-    - type: DeviceLinkSource
-      linkedPorts:
-        17229:
-        - DoorStatus: InputA
-        16747:
-        - DoorStatus: Toggle
   - uid: 16749
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,-2.5
       parent: 16726
-    - type: DeviceLinkSource
-      linkedPorts:
-        17229:
-        - DoorStatus: InputB
   - uid: 16750
     components:
     - type: Transform
       pos: 5.5,-0.5
       parent: 16726
-    - type: DeviceLinkSource
-      linkedPorts:
-        17227:
-        - DoorStatus: InputB
 - proto: BlastDoorFrame
   entities:
   - uid: 756
@@ -87505,18 +87466,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -59.5,10.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        750:
-        - Pressed: Toggle
-        744:
-        - Pressed: Toggle
-        754:
-        - Pressed: Toggle
-        755:
-        - Pressed: Toggle
-        751:
-        - Pressed: Toggle
 - proto: LockableButtonBar
   entities:
   - uid: 10360
@@ -87525,28 +87474,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -32.5,-27.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11954:
-        - Pressed: Toggle
-        11955:
-        - Pressed: Toggle
-        11956:
-        - Pressed: Toggle
   - uid: 10361
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -27.5,-28.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11953:
-        - Pressed: Toggle
-        11952:
-        - Pressed: Toggle
-        11951:
-        - Pressed: Toggle
 - proto: LockableButtonCaptain
   entities:
   - uid: 17226
@@ -87555,10 +87488,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 3.517624,-6.217499
       parent: 16726
-    - type: DeviceLinkSource
-      linkedPorts:
-        16746:
-        - Pressed: Toggle
 - proto: LockableButtonCargo
   entities:
   - uid: 10362
@@ -87567,28 +87496,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -11.5,-50.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11905:
-        - Pressed: Toggle
-        11904:
-        - Pressed: Toggle
   - uid: 10363
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,-47.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        762:
-        - Pressed: Toggle
-        761:
-        - Pressed: Toggle
-        759:
-        - Pressed: Toggle
-        760:
-        - Pressed: Toggle
 - proto: LockableButtonCommand
   entities:
   - uid: 16487
@@ -87597,12 +87510,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,-10.5
       parent: 16316
-    - type: DeviceLinkSource
-      linkedPorts:
-        16352:
-        - Pressed: Toggle
-        16353:
-        - Pressed: Toggle
 - proto: LockableButtonEngineering
   entities:
   - uid: 10364
@@ -87611,16 +87518,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -64.5,-10.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11965:
-        - Pressed: Toggle
-        11966:
-        - Pressed: Toggle
-        11967:
-        - Pressed: Toggle
-        11964:
-        - Pressed: Toggle
 - proto: LockableButtonHeadOfSecurity
   entities:
   - uid: 10365
@@ -87633,22 +87530,11 @@ entities:
       parent: 2
     - type: WirelessNetworkConnection
       range: 10000000
-    - type: DeviceLinkSource
-      range: 1E+09
-      linkedPorts:
-        16748:
-        - Pressed: Toggle
   - uid: 10366
     components:
     - type: Transform
       pos: -27.5,6.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        749:
-        - Pressed: Toggle
-        748:
-        - Pressed: Toggle
 - proto: LockableButtonSecurity
   entities:
   - uid: 19866
@@ -89069,10 +88955,6 @@ entities:
       gate: And
     - type: DeviceLinkSink
       invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        17289:
-        - Output: Trigger
     - type: Physics
       canCollide: False
       bodyType: Static
@@ -100172,10 +100054,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -35.5,-90.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        753:
-        - Pressed: Toggle
   - uid: 11975
     components:
     - type: MetaData
@@ -100183,12 +100061,6 @@ entities:
     - type: Transform
       pos: -21.5,-41.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11935:
-        - Pressed: Toggle
-        11936:
-        - Pressed: Toggle
   - uid: 11976
     components:
     - type: MetaData
@@ -100197,182 +100069,76 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -30.5,-47.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11917:
-        - Pressed: Toggle
-        11911:
-        - Pressed: Toggle
-        11910:
-        - Pressed: Toggle
-        11920:
-        - Pressed: Toggle
-        11912:
-        - Pressed: Toggle
-        11909:
-        - Pressed: Toggle
-        11959:
-        - Pressed: Toggle
-        11958:
-        - Pressed: Toggle
-        11913:
-        - Pressed: Toggle
-        11921:
-        - Pressed: Toggle
-        11919:
-        - Pressed: Toggle
-        11916:
-        - Pressed: Toggle
-        11915:
-        - Pressed: Toggle
-        11918:
-        - Pressed: Toggle
-        11914:
-        - Pressed: Toggle
-        11957:
-        - Pressed: Toggle
-        11963:
-        - Pressed: Toggle
-        11962:
-        - Pressed: Toggle
-        11960:
-        - Pressed: Toggle
-        11961:
-        - Pressed: Toggle
   - uid: 11977
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -76.5,-54.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        113:
-        - Pressed: DoorBolt
-        11944:
-        - Pressed: Toggle
   - uid: 11978
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -71.5,-54.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        110:
-        - Pressed: DoorBolt
-        11943:
-        - Pressed: Toggle
   - uid: 11979
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -71.5,-50.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        106:
-        - Pressed: DoorBolt
-        11942:
-        - Pressed: Toggle
   - uid: 11980
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -76.5,-50.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        111:
-        - Pressed: DoorBolt
-        11941:
-        - Pressed: Toggle
   - uid: 11981
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -76.5,-46.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        109:
-        - Pressed: DoorBolt
-        11940:
-        - Pressed: Toggle
   - uid: 11982
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -71.5,-46.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        107:
-        - Pressed: DoorBolt
   - uid: 11983
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -71.5,-42.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        108:
-        - Pressed: DoorBolt
-        11938:
-        - Pressed: Toggle
   - uid: 11984
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -76.5,-42.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        112:
-        - Pressed: DoorBolt
-        11937:
-        - Pressed: Toggle
   - uid: 11985
     components:
     - type: Transform
       pos: 15.5,-13.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        747:
-        - Pressed: Toggle
   - uid: 11986
     components:
     - type: Transform
       pos: -47.5,-57.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11902:
-        - Pressed: Toggle
-        11901:
-        - Pressed: Toggle
   - uid: 11987
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 15.5,-18.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        745:
-        - Pressed: Toggle
   - uid: 11988
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -35.5,-90.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        752:
-        - Pressed: Toggle
 - proto: SignalButtonDirectional
   entities:
   - uid: 11989
@@ -100380,48 +100146,22 @@ entities:
     - type: Transform
       pos: -61.5,-51.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        114:
-        - Pressed: DoorBolt
   - uid: 11990
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -61.5,-55.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        115:
-        - Pressed: DoorBolt
   - uid: 11991
     components:
     - type: Transform
       pos: -35.5,-53.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        11945:
-        - Pressed: Toggle
-        11946:
-        - Pressed: Toggle
-        11947:
-        - Pressed: Toggle
-        11948:
-        - Pressed: Toggle
-        11949:
-        - Pressed: Toggle
-        11950:
-        - Pressed: Toggle
   - uid: 11992
     components:
     - type: Transform
       pos: -84.5,-42.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        746:
-        - Pressed: Toggle
 - proto: SignalTimer
   entities:
   - uid: 17289
@@ -100432,32 +100172,6 @@ entities:
       parent: 16726
     - type: SignalTimer
       delay: 1200
-    - type: DeviceLinkSource
-      linkedPorts:
-        16751:
-        - Timer: Toggle
-        16752:
-        - Timer: Toggle
-        16754:
-        - Timer: Toggle
-        16753:
-        - Timer: Toggle
-        17059:
-        - Timer: Trigger
-        17061:
-        - Timer: Trigger
-        17062:
-        - Timer: Trigger
-        17063:
-        - Timer: Trigger
-        17064:
-        - Timer: Trigger
-        17060:
-        - Timer: Trigger
-        16756:
-        - Timer: Toggle
-        16755:
-        - Timer: Toggle
     - type: DeviceLinkSink
       invokeCounter: 1
 - proto: SignAnomaly
@@ -108712,82 +108426,11 @@ entities:
     - type: Transform
       pos: -84.5,-44.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        6312:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6310:
-        - Left: Reverse
-        - Right: Forward
-        6311:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6313:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6314:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6315:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6316:
-        - Left: Reverse
-        - Middle: Off
-        - Right: Forward
-        6317:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6318:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
-        6319:
-        - Right: Forward
-        - Left: Reverse
-        - Middle: Off
-        11467:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
   - uid: 13149
     components:
     - type: Transform
       pos: -3.5,-47.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        6325:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
-        6324:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
-        6323:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
-        6321:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
-        6320:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
-        6322:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
 - proto: UnfinishedMachineFrame
   entities:
   - uid: 13150

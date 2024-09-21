@@ -1,0 +1,37 @@
+- type: gameMap
+  id: TalosMaus
+  mapName: 'TalosMaus'
+  mapPath: /Maps/talosmaus.yml
+  minPlayers: 0
+  maxPlayers: 600
+  stations:
+    TalosMaus:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} TalosMaus {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_wode.yml
+        - type: StationJobs
+          availableJobs:
+            #Gorlex
+            TalosGorlexMasterAtArms: [ 1, 1 ]
+            TalosGorlexVanguard: [ 1, 1 ]
+            TalosGorlex: [ 5, 5 ]
+            #Cybersun
+            TalosCybersunCommandOfficer: [ 1, 1 ]
+            TalosCybersun: [ 4, 4 ]
+            TalosCybersunSEA: [ 1, 1 ]
+            #SELF
+            TalosSELFWorker: [ 4, 4 ]
+            TalosSELF: [ 1, 1 ]
+            #Interdyne
+            TalosInterdyneCMD: [ 1, 1 ]
+            TalosInterdyne: [ 3, 3 ]
+            TalosInterdyneParamedic: [ 1, 1 ]
+            #Assistoid
+            TalosAssistant: [ 42, 42 ]
+
