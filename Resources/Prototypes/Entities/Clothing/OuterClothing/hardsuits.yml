@@ -82,15 +82,15 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
+        Blunt: 0.7
         Slash: 0.9
         Piercing: 0.9
         Shock: 0.8
         Caustic: 0.5
         Radiation: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineering
@@ -326,15 +326,15 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
+        Blunt: 0.6
+        Slash: 0.6
         Piercing: 0.8
-        Heat: 0.4
+        Heat: 0.2
         Radiation: 0.0
         Caustic: 0.7
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineeringWhite
