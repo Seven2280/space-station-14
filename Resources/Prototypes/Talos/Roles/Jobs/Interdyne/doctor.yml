@@ -4,7 +4,7 @@
   description: job-description-TalosInterdyne
   playTimeTracker: JobTalosInterdyne
   startingGear: TalosInterdyneGear
-  icon: "JobIconPassenger"
+  icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-everyone
   access: 
   - Maintenance

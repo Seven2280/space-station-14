@@ -4,7 +4,7 @@
   description: job-description-TalosSELFWorker
   playTimeTracker: JobTalosSELFWorker
   startingGear: TalosSELFWorkerGear
-  icon: "JobIconSecurityOfficer"
+  icon: "JobIconStationEngineer"
   supervisors: job-supervisors-everyone
   access:
   - Maintenance

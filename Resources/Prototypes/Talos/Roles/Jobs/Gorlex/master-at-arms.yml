@@ -4,7 +4,7 @@
   description: job-description-TalosGorlexMasterAtArms
   playTimeTracker: JobTalosGorlexMasterAtArms
   startingGear: TalosGorlexMasterAtArmsGear
-  icon: "JobIconWarden"
+  icon: "JobIconHeadOfSecurity"
   supervisors: job-supervisors-everyone
   access:
   - Maintenance
@@ -15,6 +15,7 @@
   - Cryogenics
   - External
   - Command
+  - HeadOfSecurity
   - Armory
 
 - type: startingGear

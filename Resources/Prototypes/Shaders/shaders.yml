@@ -109,9 +109,9 @@
     CircleRadius: 420.0
     CircleMinDist: 0.0
     CirclePow: 1.0
-    CircleMax: 4.0
-    CircleMult: 0.25
+    CircleMax: 2.0
+    CircleMult: 0.1
     FalloffClampMin: 0.075
-    FalloffClampMax: 1.0
-    FalloffStrength: 0.75
+    FalloffClampMax: 0.75
+    FalloffStrength: 0.5
     FalloffPow: 3.0

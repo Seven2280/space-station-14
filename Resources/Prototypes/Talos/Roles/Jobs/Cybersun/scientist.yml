@@ -4,7 +4,7 @@
   description: job-description-TalosCybersun
   playTimeTracker: JobTalosCybersun
   startingGear: TalosCybersunGear
-  icon: "JobIconSecurityOfficer"
+  icon: "JobIconScientist"
   supervisors: job-supervisors-everyone
   access:
   - Research
