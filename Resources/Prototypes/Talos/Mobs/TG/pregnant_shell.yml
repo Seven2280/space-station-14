@@ -54,7 +54,9 @@
     hidden: true
     damage:
       groups:
-        Brute: 19
+        Brute: 22
+    soundHit:
+      path: "/Audio/Talos/Mob/shells/pregnant_shell_attack.ogg"
   - type: Flammable
     fireSpread: true
     canResistFire: true
@@ -65,6 +67,9 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Standing
   - type: IntrinsicRadioReceiver
+  - type: EmitSoundOnSpawn
+    sound:
+      path: "/Audio/Talos/Mob/shells/pregnant_shell_spawn.ogg"
   - type: Puller
   - type: IntrinsicRadioTransmitter
     channels:
