@@ -24,7 +24,7 @@ public sealed partial class AnomalyVesselComponent : Component
     /// A multiplier applied to the amount of points generated.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float PointMultiplier = 1;
+    public float PointMultiplier = 1.25f; //Talos Edit
 
     /// <summary>
     /// The maximum time between each beep
