@@ -156,3 +156,33 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: Appearance
+ 
+- type: entity
+  id: BaseStunnerNail
+  name: cartridge (.45 magnum)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+      - StunnerNail
+  - type: CartridgeAmmo
+    proto: StunnerNail
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+ 
+- type: entity
+  id: StunnerNail
+  name: bullet (.45 magnum)
+  parent: BaseBullet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+  - type: StaminaDamageOnCollide
+    damage: 35

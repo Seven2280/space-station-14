@@ -128,13 +128,13 @@ namespace Content.Shared.CCVar
         ///     Minimum time between meteor swarms in minutes.
         /// </summary>
         public static readonly CVarDef<float>
-            MeteorSwarmMinTime = CVarDef.Create("events.meteor_swarm_min_time", 12.5f, CVar.ARCHIVE | CVar.SERVERONLY);
+            MeteorSwarmMinTime = CVarDef.Create("events.meteor_swarm_min_time", 5.5f, CVar.ARCHIVE | CVar.SERVERONLY);
 
         /// <summary>
         ///     Maximum time between meteor swarms in minutes.
         /// </summary>
         public static readonly CVarDef<float>
-            MeteorSwarmMaxTime = CVarDef.Create("events.meteor_swarm_max_time", 17.5f, CVar.ARCHIVE | CVar.SERVERONLY);
+            MeteorSwarmMaxTime = CVarDef.Create("events.meteor_swarm_max_time", 12.5f, CVar.ARCHIVE | CVar.SERVERONLY);
 
         /*
          * Game
@@ -192,7 +192,7 @@ namespace Content.Shared.CCVar
         ///     Controls the maximum number of character slots a player is allowed to have.
         /// </summary>
         public static readonly CVarDef<int>
-            GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 30, CVar.ARCHIVE | CVar.SERVERONLY);
+            GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 7, CVar.ARCHIVE | CVar.SERVERONLY);
 
         /// <summary>
         ///     Controls the game map prototype to load. SS14 stores these prototypes in Prototypes/Maps.
@@ -411,14 +411,14 @@ namespace Content.Shared.CCVar
         /// Delay between station alert level changes.
         /// </summary>
         public static readonly CVarDef<int> GameAlertLevelChangeDelay =
-            CVarDef.Create("game.alert_level_change_delay", 30, CVar.SERVERONLY);
+            CVarDef.Create("game.alert_level_change_delay", 10, CVar.SERVERONLY);
 
         /// <summary>
         /// The time in seconds that the server should wait before restarting the round.
         /// Defaults to 2 minutes.
         /// </summary>
         public static readonly CVarDef<float> RoundRestartTime =
-            CVarDef.Create("game.round_restart_time", 120f, CVar.SERVERONLY);
+            CVarDef.Create("game.round_restart_time", 30f, CVar.SERVERONLY);
 
         /// <summary>
         /// The prototype to use for secret weights.
@@ -511,13 +511,13 @@ namespace Content.Shared.CCVar
         ///     (i.e. postround or lobby)
         /// </summary>
         public static readonly CVarDef<float> TipFrequencyOutOfRound =
-            CVarDef.Create("tips.out_of_game_frequency", 60f * 1.5f);
+            CVarDef.Create("tips.out_of_game_frequency", 60f * 4.5f);
 
         /// <summary>
         ///     The number of seconds between each tip being displayed when the round is actively going
         /// </summary>
         public static readonly CVarDef<float> TipFrequencyInRound =
-            CVarDef.Create("tips.in_game_frequency", 60f * 60);
+            CVarDef.Create("tips.in_game_frequency", 60f * 10);
 
         public static readonly CVarDef<string> LoginTipsDataset =
             CVarDef.Create("tips.login_dataset", "Tips");
@@ -526,7 +526,7 @@ namespace Content.Shared.CCVar
         ///     The chance for Tippy to replace a normal tip message.
         /// </summary>
         public static readonly CVarDef<float> TipsTippyChance =
-            CVarDef.Create("tips.tippy_chance", 0.01f);
+            CVarDef.Create("tips.tippy_chance", 0.25f);
 
         /*
          * Console
@@ -670,7 +670,7 @@ namespace Content.Shared.CCVar
         /// Technically client doesn't need to know about it but this may prevent a bug in the distant future so it stays.
         /// </remarks>
         public static readonly CVarDef<bool> MobPushing =
-            CVarDef.Create("physics.mob_pushing", false, CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("physics.mob_pushing", true, CVar.REPLICATED | CVar.SERVER); //need check talos
 
         /*
          * Music
@@ -730,7 +730,7 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<int> NPCMaxUpdates =
-            CVarDef.Create("npc.max_updates", 128);
+            CVarDef.Create("npc.max_updates", 64);
 
         public static readonly CVarDef<bool> NPCEnabled = CVarDef.Create("npc.enabled", true);
 
@@ -744,7 +744,7 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<float> NetAtmosDebugOverlayTickRate =
-            CVarDef.Create("net.atmosdbgoverlaytickrate", 3.0f);
+            CVarDef.Create("net.atmosdbgoverlaytickrate", 6.0f);
 
         public static readonly CVarDef<float> NetGasOverlayTickRate =
             CVarDef.Create("net.gasoverlaytickrate", 3.0f);
@@ -773,7 +773,7 @@ namespace Content.Shared.CCVar
         /// Should users be able to see their own notes? Admins will be able to see and set notes regardless
         /// </summary>
         public static readonly CVarDef<bool> SeeOwnNotes =
-            CVarDef.Create("admin.see_own_notes", false, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("admin.see_own_notes", true, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
         /// Should the server play a quick sound to the active admins whenever a new player joins?
@@ -1036,7 +1036,7 @@ namespace Content.Shared.CCVar
         ///     Extremely small values may impact performance.
         /// </summary>
         public static readonly CVarDef<float> RadiationMinIntensity =
-            CVarDef.Create("radiation.min_intensity", 0.1f, CVar.SERVERONLY);
+            CVarDef.Create("radiation.min_intensity", 0.2f, CVar.SERVERONLY);
 
         /// <summary>
         ///     Rate of radiation system update in seconds.
@@ -1097,7 +1097,7 @@ namespace Content.Shared.CCVar
         ///     Whether gas differences will move entities.
         /// </summary>
         public static readonly CVarDef<bool> SpaceWind =
-            CVarDef.Create("atmos.space_wind", false, CVar.SERVERONLY);
+            CVarDef.Create("atmos.space_wind", true, CVar.SERVERONLY);
 
         /// <summary>
         ///     Divisor from maxForce (pressureDifference * 2.25f) to force applied on objects.
@@ -1209,13 +1209,13 @@ namespace Content.Shared.CCVar
         ///     Maximum time in milliseconds that atmos can take processing.
         /// </summary>
         public static readonly CVarDef<float> AtmosMaxProcessTime =
-            CVarDef.Create("atmos.max_process_time", 3f, CVar.SERVERONLY);
+            CVarDef.Create("atmos.max_process_time", 2f, CVar.SERVERONLY);
 
         /// <summary>
         ///     Atmos tickrate in TPS. Atmos processing will happen every 1/TPS seconds.
         /// </summary>
         public static readonly CVarDef<float> AtmosTickRate =
-            CVarDef.Create("atmos.tickrate", 15f, CVar.SERVERONLY);
+            CVarDef.Create("atmos.tickrate", 5f, CVar.SERVERONLY);
 
         /// <summary>
         ///     Scale factor for how fast things happen in our atmosphere
@@ -1382,38 +1382,38 @@ namespace Content.Shared.CCVar
         ///     The required ratio of the server that must agree for a restart round vote to go through.
         /// </summary>
         public static readonly CVarDef<float> VoteRestartRequiredRatio =
-            CVarDef.Create("vote.restart_required_ratio", 0.85f, CVar.SERVERONLY);
+            CVarDef.Create("vote.restart_required_ratio", 0.65f, CVar.SERVERONLY);
 
         /// <summary>
         /// Whether or not to prevent the restart vote from having any effect when there is an online admin
         /// </summary>
         public static readonly CVarDef<bool> VoteRestartNotAllowedWhenAdminOnline =
-            CVarDef.Create("vote.restart_not_allowed_when_admin_online", true, CVar.SERVERONLY);
+            CVarDef.Create("vote.restart_not_allowed_when_admin_online", false, CVar.SERVERONLY);
 
         /// <summary>
         ///     The delay which two votes of the same type are allowed to be made by separate people, in seconds.
         /// </summary>
         public static readonly CVarDef<float> VoteSameTypeTimeout =
-            CVarDef.Create("vote.same_type_timeout", 240f, CVar.SERVERONLY);
+            CVarDef.Create("vote.same_type_timeout", 120f, CVar.SERVERONLY);
 
 
         /// <summary>
         ///     Sets the duration of the map vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerMap = CVarDef.Create("vote.timermap", 90, CVar.SERVERONLY);
+            VoteTimerMap = CVarDef.Create("vote.timermap", 45, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the restart vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerRestart = CVarDef.Create("vote.timerrestart", 60, CVar.SERVERONLY);
+            VoteTimerRestart = CVarDef.Create("vote.timerrestart", 25, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the gamemode/preset vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 30, CVar.SERVERONLY);
+            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 15, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the map vote timer when ALONE.
@@ -1564,14 +1564,14 @@ namespace Content.Shared.CCVar
         /// How long after the console is authorized for the shuttle to early launch.
         /// </summary>
         public static readonly CVarDef<float> EmergencyShuttleAuthorizeTime =
-            CVarDef.Create("shuttle.emergency_authorize_time", 10f, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.emergency_authorize_time", 17f, CVar.SERVERONLY);
 
         /// <summary>
         /// The minimum time for the emergency shuttle to arrive at centcomm.
         /// Actual minimum travel time cannot be less than <see cref="ShuttleSystem.DefaultArrivalTime"/>
         /// </summary>
         public static readonly CVarDef<float> EmergencyShuttleMinTransitTime =
-            CVarDef.Create("shuttle.emergency_transit_time_min", 60f, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.emergency_transit_time_min", 120f, CVar.SERVERONLY);
 
         /// <summary>
         /// The maximum time for the emergency shuttle to arrive at centcomm.
@@ -1721,7 +1721,7 @@ namespace Content.Shared.CCVar
         /// Goes from 0 (no recoil at all) to 1 (regular amounts of recoil)
         /// </summary>
         public static readonly CVarDef<float> ScreenShakeIntensity =
-            CVarDef.Create("accessibility.screen_shake_intensity", 1f, CVar.CLIENTONLY | CVar.ARCHIVE);
+            CVarDef.Create("accessibility.screen_shake_intensity", 3f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         /// <summary>
         /// A generic toggle for various visual effects that are color sensitive.
@@ -1920,7 +1920,7 @@ namespace Content.Shared.CCVar
         /// Time that players have to wait before rules can be accepted.
         /// </summary>
         public static readonly CVarDef<float> RulesWaitTime =
-            CVarDef.Create("rules.time", 45f, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("rules.time", 5f, CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         /// Don't show rules to localhost/loopback interface.
@@ -2004,7 +2004,7 @@ namespace Content.Shared.CCVar
         /// The time you must spend reading the rules, before the "Request" button is enabled
         /// </summary>
         public static readonly CVarDef<float> GhostRoleTime =
-            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("ghost.role_time", 5f, CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
         /// Whether or not to kill the player's mob on ghosting, when it is in a critical health state.
