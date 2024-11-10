@@ -2,11 +2,11 @@
   id: NanoMedPlusInventory
   startingInventory:
     HandheldHealthAnalyzer: 3
-    Brutepack: 5
-    Ointment: 5
+    Brutepack: 4
+    Ointment: 4
     Bloodpack: 5
     EpinephrineChemistryBottle: 3
     Syringe: 5
-    ClothingEyesHudMedical: 2
-    ClothingEyesEyepatchHudMedical: 2
+    MedicatedSuture: 3
+    RegenerativeMesh: 3
 

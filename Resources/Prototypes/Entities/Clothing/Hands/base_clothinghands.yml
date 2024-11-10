@@ -34,6 +34,9 @@
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/Talos/Items/PickUp/glove_pick_up.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Talos/Items/Equip/glove_equip.ogg
 
 - type: entity
   abstract: true

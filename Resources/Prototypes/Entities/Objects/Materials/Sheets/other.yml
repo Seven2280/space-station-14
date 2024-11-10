@@ -119,6 +119,18 @@
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/Talos/Items/PickUp/plasma_pick_up.ogg
+  - type: PointLight
+    softness: 0.5
+    energy: 1.345
+    color: '#8d559a'
+    radius: 7
+    enabled: True
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/Talos/Items/Ambient/plasma_ambient.ogg
+    range: 5
+    volume: -9
 
 - type: entity
   parent: SheetPlasma
