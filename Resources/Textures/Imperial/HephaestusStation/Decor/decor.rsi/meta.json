@@ -16,7 +16,10 @@
         { "name": "portret_1" },
         { "name": "portret_2" },
         { "name": "portret_3" },
-        { "name": "rnd-light" },
+        { "name": "interdyne-light" },
+        { "name": "synd-light" },
+        { "name": "gorlex-light" },
+        { "name": "cybersun-light" },
         { "name": "table_glass" },
         { "name": "shelf" }
     ]
