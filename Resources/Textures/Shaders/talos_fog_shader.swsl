@@ -1,0 +1,15 @@
+uniform sampler2D NOISE_TEXTURE;
+uniform highp float FogDensity; //= 0.25;
+uniform highp vec2 FogSpeed; //= vec2(0.02, 0.01);
+
+void fragment() {
+	COLOR = zTextureSpec(SCREEN_TEXTURE, Pos);
+
+	highp vec2 uv = UV + FogSpeed * TIME;
+
+	highp float noise = texture2D(NOISE_TEXTURE, uv).r;
+
+	highp float fog = clamp(noise * 2.0 - 1.0, 0.0, 1.0);
+
+	COLOR.a *= fog * FogDensity;
+}

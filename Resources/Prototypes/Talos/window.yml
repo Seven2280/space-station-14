@@ -17,6 +17,17 @@
   - type: IconSmooth
     key: walls
     base: gold
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.35,0.35,0.35"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
 
 - type: entity
   id: TalosWindowSill
@@ -37,6 +48,17 @@
   - type: IconSmooth
     key: walls
     base: gold
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        mask:
+        - ItemMask
+        layer:
+        - WallLayer
+        density: 50
 
 ##COLORED
 - type: entity
