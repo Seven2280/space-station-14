@@ -1,4 +1,5 @@
 using Content.Server.Power.Components;
+using Content.Server.AlertLevel; //talos
 using Content.Server.Power.EntitySystems;
 using Content.Server.Power.Events;
 using Content.Server.Stunnable.Components;
@@ -10,6 +11,7 @@ using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Popups;
 using Content.Shared.Stunnable;
+using Content.Server.Station.Systems; //talos
 
 namespace Content.Server.Stunnable.Systems
 {
@@ -20,7 +22,8 @@ namespace Content.Server.Stunnable.Systems
         [Dependency] private readonly SharedPopupSystem _popup = default!;
         [Dependency] private readonly BatterySystem _battery = default!;
         [Dependency] private readonly ItemToggleSystem _itemToggle = default!;
-
+        [Dependency] private readonly AlertLevelSystem _alertLevelSystem = default!; //talos
+        [Dependency] private readonly StationSystem _stationSystem = default!; //talos
         public override void Initialize()
         {
             base.Initialize();
@@ -63,6 +66,29 @@ namespace Content.Server.Stunnable.Systems
 
         private void TryTurnOn(Entity<StunbatonComponent> entity, ref ItemToggleActivateAttemptEvent args)
         {
+            var stationUid = _stationSystem.GetOwningStation(entity);
+
+            if (stationUid == null) //talos station
+            {
+                args.Cancelled = true;
+                if (args.User != null)
+                {
+                    _popup.PopupEntity(Loc.GetString("stunbaton-component-no-station"), (EntityUid) args.User, (EntityUid) args.User);
+                }
+                return;
+            }
+
+            var currentAlertLevel = _alertLevelSystem.GetLevel(stationUid.Value);
+            if (currentAlertLevel is not ("red" or "blue" or "gamma" or "delta"))
+            {
+                args.Cancelled = true;
+                if (args.User != null)
+                {
+                    _popup.PopupEntity(Loc.GetString("stunbaton-component-alert-restriction"), (EntityUid) args.User, (EntityUid) args.User);
+                }
+                return;
+            }
+
             if (!TryComp<BatteryComponent>(entity, out var battery) || battery.CurrentCharge < entity.Comp.EnergyPerUse)
             {
                 args.Cancelled = true;
