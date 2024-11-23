@@ -1,0 +1,10 @@
+- type: vendingMachineInventory
+  id: InterdyneDrobeInventory
+  startingInventory:
+    ClothingBeltMedical: 3
+    ClothingEyesInterdyne: 2
+    ClothingHeadsetMedical: 3
+    ClothingHandsGlovesLatex: 3
+    ClothingHandsGlovesNitrile: 2
+    ClothingShoesBootsInterdyne: 3
+    ClothingUniformJumpsuitInterdyne: 3
