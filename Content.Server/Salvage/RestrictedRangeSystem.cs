@@ -31,7 +31,7 @@ public sealed class RestrictedRangeSystem : SharedRestrictedRangeSystem
         var boundaryPhysics = AddComp<PhysicsComponent>(boundaryUid);
         var cShape = new ChainShape();
         // Don't need it to be a perfect circle, just need it to be loosely accurate.
-        cShape.CreateLoop(Vector2.Zero, range + 0.25f, false, count: 4);
+        cShape.CreateLoop(Vector2.Zero, range + 255f, false, count: 4);
         _fixtures.TryCreateFixture(
             boundaryUid,
             cShape,

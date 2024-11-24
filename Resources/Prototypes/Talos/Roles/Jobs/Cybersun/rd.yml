@@ -15,6 +15,7 @@
   - Salvage
   - Cryogenics
   - External
+  - HeadOfPersonnel
 
 - type: startingGear
   id: TalosCybersunGearCommandOfficer

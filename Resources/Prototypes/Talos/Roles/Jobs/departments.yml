@@ -14,7 +14,7 @@
   color: "#c13623"
   roles:
    - TalosGorlexMasterAtArms
-   - TalosGorlexVanguard
+   #- TalosGorlexVanguard
    - TalosGorlex
 
 - type: department

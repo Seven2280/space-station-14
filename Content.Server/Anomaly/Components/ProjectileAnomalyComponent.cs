@@ -16,7 +16,7 @@ public sealed partial class ProjectileAnomalyComponent : Component
     /// The speed <see cref="ProjectilePrototype"/> can travel
     /// </summary>
     [DataField("projectileSpeed"), ViewVariables(VVAccess.ReadWrite)]
-    public float ProjectileSpeed = 30f;
+    public float ProjectileSpeed = 120f;
 
     /// <summary>
     /// The minimum number of projectiles shot per pulse
@@ -28,11 +28,11 @@ public sealed partial class ProjectileAnomalyComponent : Component
     /// The MAXIMUM number of projectiles shot per pulse
     /// </summary>
     [DataField("maxProjectiles"), ViewVariables(VVAccess.ReadWrite)]
-    public int MaxProjectiles = 9;
+    public int MaxProjectiles = 27;
 
     /// <summary>
     /// The MAXIMUM range for targeting entities
     /// </summary>
     [DataField("projectileRange"), ViewVariables(VVAccess.ReadWrite)]
-    public float ProjectileRange = 50f;
+    public float ProjectileRange = 100f;
 }

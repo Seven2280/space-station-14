@@ -17,6 +17,7 @@
   - Service
   - ChiefMedicalOfficer
   - Command
+  - HeadOfPersonnel
 
 - type: startingGear
   id: TalosInterdyneCMDGear

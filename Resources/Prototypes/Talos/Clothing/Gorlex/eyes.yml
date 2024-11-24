@@ -1,7 +1,8 @@
 - type: entity
   parent: ClothingEyesGlassesSecurity
   id: ClothingEyesGorlex
-  name: cargo tech jumpsuit
+  name: Очки охраны Gorlex Securities LLC
+  description: Стильные очки со стальной оправой. Обычно люди в таких очках представляют собой закон.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Eyes/gorlex.rsi

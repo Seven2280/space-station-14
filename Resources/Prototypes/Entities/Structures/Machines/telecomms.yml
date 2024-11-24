@@ -63,6 +63,13 @@
       key_slots: !type:Container
       machine_board: !type:Container
       machine_parts: !type:Container
+  - type: PointLight
+    enabled: true
+    radius: 4
+    energy: 2.0
+    color: "#a4fef4"
+    mask: /Textures/Effects/LightMasks/telecoms.png
+  - type: LitOnPowered
 
 - type: entity
   parent: TelecomServer

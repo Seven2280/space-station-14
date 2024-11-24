@@ -30,13 +30,13 @@ public sealed partial class GasProducerAnomalyComponent : Component
     /// The amount of gas released when the anomaly reaches max severity
     /// </summary>
     [DataField("criticalMoleAmount")]
-    public float SuperCriticalMoleAmount = 150f;
+    public float SuperCriticalMoleAmount = 650f;
 
     /// <summary>
     /// The amount of gas released passively
     /// </summary>
     [DataField("passiveMoleAmount")]
-    public float PassiveMoleAmount = 1f;
+    public float PassiveMoleAmount = 1.5f;
 
     /// <summary>
     /// The radius of random gas spawns.

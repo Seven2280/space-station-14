@@ -1,32 +1,32 @@
-- type: job
-  id: TalosGorlexVanguard
-  name: job-name-TalosGorlexVanguard
-  description: job-description-TalosVanguard
-  playTimeTracker: JobTalosGorlexVanguard
-  startingGear: TalosGorlexVanguardGear
-  icon: "JobIconWarden"
-  supervisors: job-supervisors-everyone
-  access:
-  - Maintenance
-  - Cargo
-  - Security
-  - Brig
-  - Salvage
-  - Cryogenics
-  - External
-  - Armory
+# - type: job
+#   id: TalosGorlexVanguard
+#   name: job-name-TalosGorlexVanguard
+#   description: job-description-TalosVanguard
+#   playTimeTracker: JobTalosGorlexVanguard
+#   startingGear: TalosGorlexVanguardGear
+#   icon: "JobIconWarden"
+#   supervisors: job-supervisors-everyone
+#   access:
+#   - Maintenance
+#   - Cargo
+#   - Security
+#   - Brig
+#   - Salvage
+#   - Cryogenics
+#   - External
+#   - Armory
 
-- type: startingGear
-  id: TalosGorlexVanguardGear
-  equipment:
-    id: TalosGorlexVanguardIDCard
-    ears: ClothingHeadsetAltSecurity
-    jumpsuit: ClothingUniformJumpsuitGorlexOfficer
-    shoes: ClothingShoesBootsJack
-    belt: ClothingUniformWebbingGorlex
-    outerClothing: ClothingOuterGorlexWarmonger
-    head: ClothingHeadGorlexWarmonger
-    gloves: ClothingHandsGlovesCombat
+# - type: startingGear
+#   id: TalosGorlexVanguardGear
+#   equipment:
+#     id: TalosGorlexVanguardIDCard
+#     ears: ClothingHeadsetAltSecurity
+#     jumpsuit: ClothingUniformJumpsuitGorlexOfficer
+#     shoes: ClothingShoesBootsJack
+#     belt: ClothingUniformWebbingGorlex
+#     outerClothing: ClothingOuterGorlexWarmonger
+#     head: ClothingHeadGorlexWarmonger
+#     gloves: ClothingHandsGlovesCombat
   #storage:
     #back:
     #- Stuff

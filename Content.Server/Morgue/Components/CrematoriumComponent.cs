@@ -9,7 +9,7 @@ public sealed partial class CrematoriumComponent : Component
     ///     The time it takes to cook in second
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public int CookTime = 5;
+    public int CookTime = 15;
 
     [DataField("cremateStartSound")]
     public SoundSpecifier CremateStartSound = new SoundPathSpecifier("/Audio/Items/Lighters/lighter1.ogg");

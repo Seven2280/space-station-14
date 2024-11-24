@@ -17,6 +17,7 @@
   - Command
   - HeadOfSecurity
   - Armory
+  - HeadOfPersonnel
 
 - type: startingGear
   id: TalosGorlexMasterAtArmsGear

@@ -1,6 +1,7 @@
 using Content.Server.DeviceLinking.Events;
 using Content.Server.Power.Components;
 using Content.Server.Wires;
+using Content.Server.Light.Components;
 using Content.Shared.Doors.Components;
 using Content.Shared.Doors.Systems;
 using Content.Shared.Interaction;
@@ -12,6 +13,7 @@ namespace Content.Server.Doors.Systems;
 public sealed class AirlockSystem : SharedAirlockSystem
 {
     [Dependency] private readonly WiresSystem _wiresSystem = default!;
+    [Dependency] private readonly SharedPointLightSystem _lights = default!;
 
     public override void Initialize()
     {
@@ -49,6 +51,11 @@ public sealed class AirlockSystem : SharedAirlockSystem
         if (TryComp<AppearanceComponent>(uid, out var appearanceComponent))
         {
             Appearance.SetData(uid, DoorVisuals.Powered, args.Powered, appearanceComponent);
+        }
+
+        if (_lights.TryGetLight(uid, out var light))
+        {
+            _lights.SetEnabled(uid, args.Powered, light);
         }
 
         if (!TryComp(uid, out DoorComponent? door))

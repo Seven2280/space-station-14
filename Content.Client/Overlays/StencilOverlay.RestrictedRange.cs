@@ -14,7 +14,7 @@ public sealed partial class StencilOverlay
         // TODO: This won't handle non-standard zooms so uhh yeah, not sure how to structure it on the shader side.
         var zoom = args.Viewport.Eye?.Zoom ?? Vector2.One;
         var length = zoom.X;
-        var bufferRange = MathF.Min(10f, rangeComp.Range);
+        var bufferRange = MathF.Min(50f, rangeComp.Range);
 
         var pixelCenter = Vector2.Transform(rangeComp.Origin, invMatrix);
         // Something something offset?
@@ -52,6 +52,6 @@ public sealed partial class StencilOverlay
 
         // Draw the rain
         worldHandle.UseShader(_protoManager.Index<ShaderPrototype>("StencilDraw").Instance());
-        _parallax.DrawParallax(worldHandle, worldAABB, sprite, curTime, position, new Vector2(0.5f, 0f));
+        _parallax.DrawParallax(worldHandle, worldAABB, sprite, curTime, position, new Vector2(0.12f, 0.1f));
     }
 }

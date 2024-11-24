@@ -17,6 +17,7 @@
   - Salvage
   - Cryogenics
   - External
+  - HeadOfPersonnel
 
 - type: startingGear
   id: TalosSELFGear

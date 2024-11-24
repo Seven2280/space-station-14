@@ -1,14 +1,14 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadGorlexCap
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: Кепка Gorlex Securities LLC
+  description: С виду обычная кепка, но подозрительно тяжелая.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/cap.rsi
   - type: Clothing
     sprite: Talos/Clothing/Head/Gorlex/cap.rsi
-  # - type: Armor 
+  # - type: Armor
   #   modifiers:
   #     coefficients:
   #       Blunt: 0.85
@@ -22,14 +22,14 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadGorlexBeret
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: Охранный берет Gorlex Gorlex Securities LLC
+  description: Берет символизирующий ваше  огромное желание выделиться из толпы. Теперь ты можешь быть таким необычным и оригинальным, каким хотел быть всегда.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/beret.rsi
   - type: Clothing
     sprite: Talos/Clothing/Head/Gorlex/beret.rsi
-  # - type: Armor 
+  # - type: Armor
   #   modifiers:
   #     coefficients:
   #       Blunt: 0.85
@@ -43,14 +43,14 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadGorlexHelmet
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: Стандартный Шлем MX-011
+  description: Стандартная экипировка Gorlex Securities LLC.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/helmet.rsi
   - type: Clothing
     sprite: Talos/Clothing/Head/Gorlex/helmet.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.85
@@ -64,14 +64,14 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadGorlexOfficerBeret
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: Офицерский берет Gorlex Securities LLC
+  description: Он чёрный. Не путайте с беретом ХОС-а станции Nanotrasen!
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/officerberet.rsi
   - type: Clothing
     sprite: Talos/Clothing/Head/Gorlex/officerberet.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.85
@@ -92,7 +92,7 @@
     sprite: Talos/Clothing/Head/Gorlex/peak.rsi
   - type: Clothing
     sprite: Talos/Clothing/Head/Gorlex/peak.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.85
@@ -106,14 +106,14 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadGorlexWarmonger
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: Офицерская Шляпа
+  description: Офицерская Шляпа Gorlex Securities LLC.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/warmonger.rsi
   - type: Clothing
     sprite: Talos/Clothing/Head/Gorlex/warmonger.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.85

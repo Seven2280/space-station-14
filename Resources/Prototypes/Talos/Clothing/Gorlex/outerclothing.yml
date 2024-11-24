@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterGorlex
-  name: "captain's carapace"
-  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  name: Тренч Gorlex Securities LLC
+  description: "Броннированный тренч в которой вшиты несколько бронепластин. Выглядит угрожающе."
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/cmd.rsi
@@ -25,8 +25,8 @@
 - type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterGorlexJacket
-  name: "captain's carapace"
-  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  name: Куртка Gorlex Securities LLC
+  description: Самый распространенный вид защиты среди офицеров Gorlex. Его предпочитают из-за стиля, а также за счет хороших показателей защиты.
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/jacket.rsi
@@ -47,8 +47,8 @@
 - type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterGorlexVest
-  name: "captain's carapace"
-  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  name: Бронежилет Gorlex
+  description: Крайне большой бронежилет способный выдержать несколько прямых попаданий из оружия 30-го калибра.
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/vest.rsi
@@ -71,8 +71,8 @@
 - type: entity
   parent: ClothingOuterGorlexVest
   id: ClothingOuterGorlexVestSlim
-  name: "captain's carapace"
-  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  name: Облегчённый Бронежилет Gorlex
+  description: Облегченный вариант бронежилета Gorlex Securities LLC.
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/vestslim.rsi
@@ -82,8 +82,8 @@
 - type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterGorlexWarmonger
-  name: "captain's carapace"
-  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  name: Бронекостюм Gorlex
+  description: Бронекостюм созданный специально для проведения операций с элементами штурма. Идеально подходит тому, кто предпочитает защиту.
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/vestwarmonger.rsi
@@ -92,13 +92,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-        Caustic: 0.5
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.45
+        Heat: 0.45
+        Caustic: 0.45
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.8
+    sprintModifier: 0.8

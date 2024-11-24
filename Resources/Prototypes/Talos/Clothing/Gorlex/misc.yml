@@ -1,7 +1,8 @@
 - type: entity
   parent: ClothingBeltMilitaryWebbing
   id: ClothingUniformWebbingGorlex
-  name: cargo tech jumpsuit
+  name: РПС Gorlex Securities LLC
+  description: Инновационная Разгручно Поясная Система от Gorlex. Любимый атрибут всех фанатов тактикула.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Belt/gorlex.rsi

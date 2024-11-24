@@ -11,6 +11,6 @@ namespace Content.Server.CombatMode.Disarm
         /// This default would be a 30% penalty to that.
         /// </summary>
         [DataField("malus")]
-        public float Malus = 0.4f;
+        public float Malus = 0.3f;
     }
 }

@@ -16,7 +16,7 @@ public sealed partial class ExplosionAnomalyComponent : Component
     /// The total amount of intensity an explosion can achieve
     /// </summary>
     [DataField("explosionTotalIntensity")]
-    public float TotalIntensity = 100f;
+    public float TotalIntensity = 300f;
 
     /// <summary>
     /// How quickly does the explosion's power slope? Higher = smaller area and more concentrated damage, lower = larger area and more spread out damage
@@ -28,5 +28,5 @@ public sealed partial class ExplosionAnomalyComponent : Component
     /// How much intensity can be applied per tile?
     /// </summary>
     [DataField("explosionMaxTileIntensity")]
-    public float MaxTileIntensity = 10f;
+    public float MaxTileIntensity = 100f;
 }
