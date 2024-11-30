@@ -1,0 +1,26 @@
+- type: entity
+  name: pepper spray
+  parent: FireExtinguisherMini
+  id: PepperSpray
+  description: This pepper spray
+  components:
+  - type: Sprite
+    sprite: Talos/Objects/security/pepper-spray.rsi
+    layers:
+    - state: pepper-spray-closed
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: Item
+    sprite: Talos/Objects/security/pepper-spray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      spray:
+        maxVol: 50
+        reagents:
+        - ReagentId: GroundPepper
+          Quantity: 50
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { state: pepper-spray-open }
+          False: { state: pepper-spray-closed }
