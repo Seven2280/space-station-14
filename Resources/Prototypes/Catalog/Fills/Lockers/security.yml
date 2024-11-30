@@ -45,7 +45,7 @@
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
-      - id: PepperSpray
+      - id: PepperSpray #talos
 
 - type: entity
   id: LockerSecurityFilled
