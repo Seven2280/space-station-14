@@ -1,0 +1,36 @@
+- type: reagent
+  id: GroundPepper
+  name: reagent-name-ground-pepper
+  group: Narcotics
+  desc: reagent-desc-ground-pepper
+  physicalDesc: reagent-physical-desc-milky
+  flavor: savory
+  color: "#D53232"
+  boilingPoint: 255.0
+  meltingPoint: 36.0
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: TemporaryBlindness
+        time: 3.0
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        probability: 1
+        messages:
+        - norepinephricacid-effect-eye-disconnect
+        - norepinephricacid-effect-eye-pain
+        - norepinephricacid-effect-darkness
+        - norepinephricacid-effect-blindness
+      - !type:HealthChange
+        scaleByQuantity: false
+        ignoreResistances: false
+        damage:
+          types:
+            Heat: 1
+      - !type:Emote
+        emote: Scream
+        probability: 0.7

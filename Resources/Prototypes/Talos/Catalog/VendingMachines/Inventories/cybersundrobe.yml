@@ -1,0 +1,6 @@
+- type: vendingMachineInventory
+  id: CybersunDrobeInventory
+  startingInventory:
+    ClothingHeadsetScience: 3
+    ClothingShoesBootsCybersun: 3
+    ClothingUniformJumpsuitCybersun: 3

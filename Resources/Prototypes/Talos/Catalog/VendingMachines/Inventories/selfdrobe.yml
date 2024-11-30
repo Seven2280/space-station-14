@@ -1,0 +1,8 @@
+- type: vendingMachineInventory
+  id: SELFDrobeInventory
+  startingInventory:
+    ClothingBeltUtility: 2
+    ClothingShoesBootsWork: 3
+    ClothingHeadsetEngineering: 3
+    ClothingUniformJumpsuitEngineering: 2
+    ClothingUniformJumpsuitSELFWorker: 3
