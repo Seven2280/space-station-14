@@ -17,7 +17,7 @@
         maxVol: 25
         reagents:
         - ReagentId: GroundPepper
-          Quantity: 50
+          Quantity: 25
   - type: GenericVisualizer
     visuals:
       enum.ToggleVisuals.Toggled:
