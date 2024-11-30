@@ -24,6 +24,9 @@
     ears: ClothingHeadsetRD
     jumpsuit: ClothingUniformJumpsuitCybersunCommandOfficer
     shoes: ClothingShoesBootsCybersunCmd
+    outerClothing: ClothingOuterCybersunColdCoat
+    head: ClothingHeadCapCybersun
+    gloves: ClothingHandsGlovesColorWhite
   #storage:
     #back:
     #- Stuff

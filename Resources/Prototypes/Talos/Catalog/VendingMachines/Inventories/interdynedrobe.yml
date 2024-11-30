@@ -2,9 +2,14 @@
   id: InterdyneDrobeInventory
   startingInventory:
     ClothingBeltMedical: 3
+    ClothingHeadInterdyneSurg: 2
     ClothingEyesInterdyne: 2
     ClothingHeadsetMedical: 3
     ClothingHandsGlovesLatex: 3
     ClothingHandsGlovesNitrile: 2
     ClothingShoesBootsInterdyne: 3
     ClothingUniformJumpsuitInterdyne: 3
+    ClothingOuterInterdyneApron: 2
+    ClothingOuterInterdyneLabcoat: 2
+    ClothingOuterInterdyneJacket: 2
+    

@@ -21,6 +21,9 @@
     ears: ClothingHeadsetScience
     jumpsuit: ClothingUniformJumpsuitCybersunOfficer
     shoes: ClothingShoesBootsCybersun
+    outerClothing: ClothingOuterCybersunVest
+    head: ClothingHeadSnowHelmetMinuteman
+    gloves: ClothingHandsGlovesColorWhite
   #storage:
     #back:
     #- Stuff

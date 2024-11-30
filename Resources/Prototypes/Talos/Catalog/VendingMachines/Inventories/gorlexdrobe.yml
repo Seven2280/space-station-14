@@ -1,19 +1,15 @@
 - type: vendingMachineInventory
   id: GorlexDrobeInventory
   startingInventory:
+    ClothingHeadGorlexBeret: 3
+    ClothingHeadGorlexHelmet: 3
+    ClothingHeadGorlexCap: 3
     ClothingUniformJumpsuitGorlexOfficer: 3
-    ClothingUniformJumpsuitSec: 3
     ClothingShoesBootsJack: 3
-    ClothingHeadHatBeretSecurity: 3
-    ClothingHeadHatSecsoft: 3
-    ClothingHandsGlovesColorBlack: 3
-    ClothingUniformJumpsuitSecGrey: 3
-    ClothingUniformJumpskirtSecGrey: 3
+    ClothingHandsGlovesColorGray: 3
     ClothingHeadsetSecurity: 3
-    ClothingOuterArmorBasic: 2
-    ClothingOuterArmorBasicSlim: 2
-    ClothingEyesBlindfold: 1
-    ClothingShoesBootsCombat: 1
-    ClothingUniformJumpsuitSecBlue: 2
+    ClothingOuterGorlexVest: 2
+    ClothingOuterGorlexVestSlim: 2
     ClothingUniformWebbingGorlex: 2
-    PepperSpray: 3
+    ClothingEyesGorlex: 3
+    PepperSpray: 2
