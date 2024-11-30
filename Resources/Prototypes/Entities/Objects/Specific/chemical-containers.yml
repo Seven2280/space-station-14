@@ -99,7 +99,7 @@
             - ReagentId: Carbon
               Quantity: 200 ##all regenerate components from talos station!!
     - type: SolutionRegeneration
-      solution: hypospray
+      solution: beaker
       generated:
         reagents:
         - ReagentId: Carbon
