@@ -14,7 +14,7 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 50
+        maxVol: 25
         reagents:
         - ReagentId: GroundPepper
           Quantity: 50
