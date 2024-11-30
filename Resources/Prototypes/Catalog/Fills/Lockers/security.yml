@@ -20,7 +20,7 @@
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
-      - id: PepperSpray
+      - id: PepperSpray #talos
 
 - type: entity
   id: LockerWardenFilled
