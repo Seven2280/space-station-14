@@ -1,5 +1,5 @@
 - type: entity
-  name: pepper spray
+  name: Перцовый Баллончик
   parent: FireExtinguisherMini
   id: PepperSpray
   description: This pepper spray
