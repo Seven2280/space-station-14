@@ -19,7 +19,7 @@
       - !type:PopupMessage
         type: Local
         visualType: MediumCaution
-        probability: 0.03
+        probability: 1
         messages:
         - norepinephricacid-effect-eye-disconnect
         - norepinephricacid-effect-eye-pain
