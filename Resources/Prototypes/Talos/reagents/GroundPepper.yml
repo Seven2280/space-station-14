@@ -15,7 +15,7 @@
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness
-        time: 5.0
+        time: 3.0
       - !type:PopupMessage
         type: Local
         visualType: MediumCaution
