@@ -1,7 +1,8 @@
 - type: entity
   parent: ClothingEyesGlassesChemical
   id: ClothingEyesCybersun
-  name: cargo tech jumpsuit
+  name: Защитные очки Cybersun
+  desc: Очки способные обеспечить защиту от попадания едких химикатов в глаза. 
   components:
   - type: Sprite
     sprite: Talos/Clothing/Eyes/cybersun.rsi
