@@ -2,7 +2,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadGorlexCap
   name: Кепка Gorlex Securities LLC
-  description: С виду обычная кепка, но подозрительно тяжелая.
+  description: С виду обычная кепка, но она кажется вам подозрительно тяжелой.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/cap.rsi
@@ -23,7 +23,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadGorlexBeret
   name: Охранный берет Gorlex Gorlex Securities LLC
-  description: Берет символизирующий ваше  огромное желание выделиться из толпы. Теперь ты можешь быть таким необычным и оригинальным, каким хотел быть всегда.
+  description: Берет символизирующий ваше огромное желание выделиться из толпы. Теперь ты можешь быть таким необычным и оригинальным, каким хотел быть всегда.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Head/Gorlex/beret.rsi
