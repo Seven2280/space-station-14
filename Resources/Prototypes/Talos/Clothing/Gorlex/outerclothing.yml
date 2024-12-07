@@ -2,7 +2,7 @@
   parent: ClothingOuterBaseLarge
   id: ClothingOuterGorlex
   name: Тренч Gorlex Securities LLC
-  description: "Броннированный тренч в которой вшиты несколько бронепластин. Выглядит угрожающе."
+  description: "Броннированный тренч в который вшито несколько бронепластин. Выглядит угрожающе."
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/cmd.rsi
@@ -26,7 +26,7 @@
   parent: ClothingOuterBaseLarge
   id: ClothingOuterGorlexJacket
   name: Куртка Gorlex Securities LLC
-  description: Самый распространенный вид защиты среди офицеров Gorlex. Его предпочитают из-за стиля, а также за счет хороших показателей защиты.
+  description: Самый распространенный вид защиты среди офицеров Gorlex LLC. Его предпочитают из-за стиля, а также за счет хороших показателей защиты.
   components:
   - type: Sprite
     sprite: Talos/Clothing/OuterClothing/Gorlex/jacket.rsi
