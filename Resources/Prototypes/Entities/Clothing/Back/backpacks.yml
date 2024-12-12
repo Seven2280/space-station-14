@@ -36,7 +36,7 @@
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Talos/Items/Drop/backpack_drop.ogg
-  - type: EmitSoundOnPickup
+  - type: EmitSoundOnPickup #Talos
     sound:
       path: /Audio/Talos/Items/PickUp/backpack_pick_up.ogg
     # Talos-Stashes-Start
