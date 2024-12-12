@@ -39,6 +39,16 @@
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/Talos/Items/PickUp/backpack_pick_up.ogg
+    # Talos-Stashes-Start
+  - type: Appearance
+  - type: SubFloorHide
+  - type: Anchorable
+  - type: CollideOnAnchor
+    enable: false
+  - type: Transform
+    anchored: false
+  - type: AnchorableStorage
+    # Talos-Stashes-End
 
 - type: entity
   parent: ClothingBackpack
