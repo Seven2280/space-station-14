@@ -1,7 +1,8 @@
 - type: entity
   parent: ClothingShoesBootsCowboyFancy
   id: ClothingShoesBootsCybersunCmd
-  name: cargo tech jumpsuit
+  name: Чёрная обувь Cybersun
+  desc: Подобная обувь напоминает вам о вашем статусе в обществе и о вашей исключительной элитарности.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Feet/cybersuncmd.rsi
@@ -11,7 +12,8 @@
 - type: entity
   parent: ClothingShoesBootsWinterSyndicate
   id: ClothingShoesBootsCybersun
-  name: cargo tech jumpsuit
+  name: Белая обувь Cybersun
+  desc: Признан аттрибутом яйцеголовых интеллектуалов. Нравится вам этот стереотип или нет, а также готовы ли вы его принять зависит от того надета ли данная обувь на вас.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Feet/cybersun.rsi

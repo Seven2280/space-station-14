@@ -2,7 +2,7 @@
   parent: ClothingBeltMilitaryWebbing
   id: ClothingUniformWebbingGorlex
   name: РПС Gorlex Securities LLC
-  description: Инновационная Разгручно Поясная Система от Gorlex. Любимый атрибут всех фанатов тактикула.
+  description: Инновационная Разгручно-Поясная-Система от Gorlex. Любимый атрибут всех фанатов тактикула.
   components:
   - type: Sprite
     sprite: Talos/Clothing/Belt/gorlex.rsi
