@@ -24,3 +24,6 @@
         enum.ToggleVisuals.Layer:
           True: { state: pepper-spray-open }
           False: { state: pepper-spray-closed }
+  - type: Spray
+    sprayvelocity: 4
+    spraydistance: 4

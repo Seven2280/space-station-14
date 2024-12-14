@@ -314,3 +314,4 @@ Resources/MapImages
 # Direnv stuff
 .direnv/
 ngrok.exe
+/zrok.exe

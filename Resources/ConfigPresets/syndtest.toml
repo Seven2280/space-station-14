@@ -1,0 +1,39 @@
+[net]
+tickrate = 30
+
+[netres]
+limit = 25.0
+
+[infolinks]
+
+[viewport]
+maximum_width = 26
+
+[events]
+meteor_swarm_min_time = 30
+meteor_swarm_max_time = 45
+
+[game]
+lobbyduration = 120
+secret_weight_prototype = "CorvaxSecretDefault"
+
+[server]
+rules_file = "CorvaxRuleset"
+
+[discord]
+rich_main_icon_id = "corvax"
+
+[game]
+hostname = "SyndTest [RU]"
+desc = "SyndTest [RU]"
+map_pool = "CorvaxDefaultMapPool"
+maxplayers = 64
+soft_max_players = 63
+map_rotation = false
+
+[rules]
+time = 5.0
+
+[hub]
+advertise = false
+tags = "lang:ru,rp:low,rp:med,region:eu_e,tts"
